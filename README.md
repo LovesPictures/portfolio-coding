@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Getting Started with the portfolio site 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Evaluation 
 
-## Available Scripts
+## Process
 
-In the project directory, you can run:
+Create a new react app 
+``npm create-react-app`` add a name for the app. Open the file and check the basic react application using ``npm start``.   
 
-### `npm start`
+In each component use the react shortcut ``rafce`` to install the react boilerplate  ``React Arrow Function Export``
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Dependencies 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Paralax
+~~Install react-parallax ```npm i react-parallax```, open the package .json and ensure its installed.~~
+### Navbar
+~~Install react navbar ``npm i responsive-navbar-react`` docs: https://bdbose.github.io/responsive-navbar-react/  repo https://github.com/bdbose/responsive-navbar-react this works well, however, I was not able to have full access to the CSS and  as it dist/index.css was buried in the ``dist/index.css``.~~
 
-### `npm test`
+![This is an image](/src/components/img/portfolio_01.JPG)
+![This is an image](/src/components/img/portfolio_01-side.JPG)
+![This is an image](/src/components/img/portfolio_01-desktop.JPG)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Decided to code it from scratch...
 
-### `npm run build`
+How to build a custom responsive navbar
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+install ``react-scroll`` react-scroll is a component to animate your vertical scroll ``npm install react-scroll``
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![This is an image](/src/components/img/portfolio_02.JPG)
+![This is an image](/src/components/img/portfolio_02-side.JPG)
+![This is an image](/src/components/img/portfolio_02-desktop.JPG)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In this component there are 4 elements 
+1. navbar.js component to set up the links 
+. navbar for large screen with ``react-scroll`` dependencies 
+2. SmallScreensNavbar.js  to manage side bar list + with react-scroll dependencies 
+4. useWindowWidthAndHeight - custom Hooks which manages the changing window size
 
-### `npm run eject`
+These functions are called in the header.js component and included a repeated background grid texture as appears in the design Museums website :) 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Site structure 
+Create six components: 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Components
+    - Navbar.jsx  +  Navbar.css
+    - Home.jsx  +  Home.css
+    - About.jsx  +  About.css
+    - Projects.jsx  +  Projects.css 
+    - Skills.jsx  +  Skills.css
+    - Contact.jsx  +  Contacts.css
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. img  
+## Styling
+- App.css with high level styles to passed to each .css file - I may update this with ``Styled Components css`` inside each component https://styled-components.com/docs/basics
 
-## Learn More
+https://materialui.co/unicode-characters/ 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Design 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Single page website responsive for;
+- Desktop tablet and mobile   
+- Responsive burger menu 
+- Parallax images 
 
-### Code Splitting
+- Font: ``din-pro, sans-serif`` or  ``Roboto Condensed', monospace``
+- Colours: background: `` #f0f0f0 `` accent: yellow:``` #e8e316, opacity 80%```
+- For the images curate a set of three from your collection or do a google search for inclusive images such as ``royalty free black girl programming images `` etc.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Inspiration 
+<!-- https://designmuseum.org/ -->
 
-### Analyzing the Bundle Size
+![This is an image](/src/components/img/designMus.JPG)
+![This is an image](/src/components/img/designMu-menu.JPG)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+### keywords
+react scroll effects parallax animation hook components 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+NPM Version Latest NPM Downloads Codecov Rate on Openbase
 
-### Deployment
+Test and Lint Storybook Storybook
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images -->

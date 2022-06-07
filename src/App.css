@@ -1,3 +1,53 @@
+
+/* Global reset */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+ --background-1: #ffff;
+ --background-2: #ebebeb;
+ 
+ --accent-1: #e8e316cc;
+ --accent-3: #adff2f;
+ --accent-4: #ac2fff;
+
+  /* font */
+  font-family: 'Roboto condensed', monospace;
+  
+  /* font size  */
+  --font-size-1: 18px;
+  --font-size-2: 24px;
+  --font-size-3: 25px;
+
+  --font-color-1: #545455;
+  --font-color-2: #ffff;
+  
+
+  /* styling */
+  --box-shadow-1: 1px 1px 1px 1px rgba(116, 110, 110, 0.199);
+  --box-shadow-2: 0 12px 12px var(var(--accent-3));
+
+  
+  /* main border */
+  --border-color-1: #afd4ec #afd4ec #fecacc #fecacc;
+  --border-style-1: 10px dotted;
+  --border-radius-1: 20px;
+  
+  /* to do - set to 10px */
+  --border-radius-2: 3px;
+
+  /* linier gradient */
+  --gradient-color-1: radial-gradient(circle, #fecacc 10%, #afd4ec 80%); 
+  --gradient-color-2: radial-gradient(circle, #afd4ec 10%, #fecacc 80%);
+
+}
+
 .App {
   text-align: center;
 }
@@ -6,33 +56,21 @@
   height: 40vmin;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+body {
+  /* padding: 0rem 1rem 0rem 1rem ; */
+  font: var(--font-primary);
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* border */
+  /* margin: 30px 10% 10px 10%;   */
+  /* border: var(--border-style-1); */
+  border-radius: var(--border-radius-1);
+  /* border-color: var(--border-color-1); */
+  
+} 
