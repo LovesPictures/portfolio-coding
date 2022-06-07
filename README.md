@@ -76,12 +76,12 @@ Single page website responsive for;
 
 
 
-### keywords
+<!--  ### keywords
 react scroll effects parallax animation hook components 
 
 NPM Version Latest NPM Downloads Codecov Rate on Openbase
 
-Test and Lint Storybook Storybook
+Test and Lint Storybook Storybook -->
 
 
 
