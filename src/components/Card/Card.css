@@ -23,11 +23,40 @@ Rachel Andrew - Grid by example https://gridbyexample.com/
 Mdn   display properties - block, inline-block 
 what are they for...
 when do we use them ...
-
- --font-family-2:
-
-
 */
+
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --background-1: #ffff;
+    --background-2: url(../img/grid.png) #e8e316cc;
+
+    --accent-1: #e8e316cc;
+    --accent-3: #adff2f;
+    --accent-4: #ac2fff;
+
+    /* font */
+    --font-family-01: "Share Tech Mono", monospace;
+    --font-family-02: "Garamond", sans-serif;
+
+    /* font size  */
+    --font-size-1: 18px;
+    --font-size-2: 24px;
+    --font-size-3: 25px;
+}
+
+body {
+    font-family: var(--font-family-01);
+}
 
 .Card {
     display: inline-block;
@@ -54,13 +83,8 @@ when do we use them ...
     height: 10%;
     object-fit: cover;
     overflow: hidden;
-
-    /* float: left;
-    width: 50%;
-    height: 100vh;
-    object-fit: cover; */
-    /* justify-content: space-between; */
 }
+
 
 .Card__icon {
     /* text-align: right; */
@@ -83,21 +107,22 @@ when do we use them ...
 
 .Card__description {
     position: relative;
-    /* right: 0; */
-    width: 80%;
-    height: 100%;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* width: 80%; */
+    height: 100%;
     margin-top: 0 0;
+    text-align: justify;
+    font-family: var(--font-family-02);
 
 }
 
-.line {
+.Line {
     height: 2px;
     width: 100px;
-    background-color: var(--accent-1);
-    /* background-color: darkgrey; */
+    /* background-color: var(--accent-3); */
+    background-color: pink;
     margin: 0 auto;
-  }
+}

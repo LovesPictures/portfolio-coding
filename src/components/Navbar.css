@@ -85,7 +85,7 @@ header {
 #sidebar-list {
   /* background-color: rgb(134, 125, 125); */
   background: var(--background-2);
-  height: 90vh;
+  height: 100vh;
   width: 180px;
   position: absolute;
   z-index: 2000;

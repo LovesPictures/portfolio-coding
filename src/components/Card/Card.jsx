@@ -1,11 +1,11 @@
 import React from "react";
 import img1 from "../img/1.jpg";
 import github from "../img/github.svg";
-import netlify from "../img/netlify.svg";
+import netlify from "../img/netlify.csv";
 
 // import netlify from "../Section/Section.css";
 
-import "../Section/Section.css";
+// import "../Section/Section.css";
 import "../Card/Card.css";
 
 /*
@@ -21,7 +21,7 @@ export const Card = () => {
   return (
     <div className="Card">
       <h3 className="Card__header">Card header</h3>
-      <div className="line"></div>
+      <div className="Line"></div>
       <img className="Card__image" src={img1} alt="#" />
       <ul>
         {/* <li><a className="Card__icon"href="https://github.com/LovesPictures"><img src={github} alt="#"/></a></li>

@@ -1,4 +1,3 @@
-
 /* Global reset */
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); */
 *,
@@ -10,18 +9,18 @@
 }
 
 :root {
- --background-1: #ffff;
- --background-2: url(./components/img/grid.png) #e8e316cc;
+  --background-1: #ffff;
+  --background-2: url(./components/img/grid.png) #e8e316cc;
 
- 
- --accent-1: #e8e316cc;
- --accent-3: #adff2f;
- --accent-4: #ac2fff;
+
+  --accent-1: #e8e316cc;
+  --accent-3: #adff2f;
+  --accent-4: #ac2fff;
 
   /* font */
   --font-family-1: 'Roboto condensed', monospace;
-  --font-family-2:  "DM Sans", sans-serif;
-  
+  --font-family-2: "DM Sans", sans-serif;
+
   /* font size  */
   --font-size-1: 18px;
   --font-size-2: 24px;
@@ -29,18 +28,18 @@
 
   --font-color-1: #545455;
   --font-color-2: #ffff;
-  
+
 
   /* styling */
   --box-shadow-1: 1px 1px 1px 1px rgba(116, 110, 110, 0.199);
   --box-shadow-2: 0 12px 12px var(var(--accent-3));
 
-  
+
   /* main border */
-  --border-color-1: #afd4ec #afd4ec #fecacc #fecacc;
+  /* --border-color-1: #afd4ec #afd4ec #fecacc #fecacc;
   --border-style-1: 10px dotted;
-  --border-radius-1: 20px;
-  
+  --border-radius-1: 20px; */
+
   /* to do - set to 10px */
   --border-radius-2: 3px;
 
@@ -58,6 +57,7 @@
   height: 40vmin;
   pointer-events: none;
 }
+
 .App-link {
   color: #61dafb;
 }
@@ -74,6 +74,5 @@ body {
   /* border: var(--border-style-1); */
   border-radius: var(--border-radius-1);
   /* border-color: var(--border-color-1); */
-  
-} 
 
+}
