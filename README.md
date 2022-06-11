@@ -11,8 +11,24 @@ In each component use the react shortcut ``rafce`` to install the react boilerpl
 
 ## Dependencies 
 
-### Paralax
-~~Install react-parallax ```npm i react-parallax```, open the package .json and ensure its installed.~~
+### Parallax
+1. Install react-parallax ``npm i react-parallax``. Docs: https://www.npmjs.com/package/react-parallax 
+
+2. Install react-scroll-parallax: React hooks and components to create parallax scroll effects for banners, images or any other DOM elements ``npm i react-parallax-scroll``. Docs: https://www.npmjs.com/package/react-scroll-parallax
+
+3. Install react-animate-on-scroll: React component to animate elements on scroll with animate.css ``npm install react-animate-on-scroll --save``. In addition, to include ``animations`` in the project see the three methods in the Docs: https://www.npmjs.com/package/react-animate-on-scroll.  e.g. link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" in the HTML head tag.
+
+4. Install react-scroll ``npm install react-scroll``. Docs: https://www.npmjs.com/package/react-scroll
+
+Open the package .json and ensure they are installed
+
+    "create-chakra-icons": "1.1.0", - ? 
+    "react": "17.0.2", - is this important? - currently "react": "^18.1.0",
+    "react-animate-on-scroll": "2.1.5",  
+    "react-parallax": "3.3.0",           
+    "react-scroll": "1.8.4",               
+    "react-scroll-parallax": "2.4.0" 
+
 ### Navbar
 ~~Install react navbar ``npm i responsive-navbar-react`` docs: https://bdbose.github.io/responsive-navbar-react/  repo https://github.com/bdbose/responsive-navbar-react this works well, however, I was not able to have full access to the CSS and  as it dist/index.css was buried in the ``dist/index.css``.~~
 
@@ -50,6 +66,38 @@ Create six components:
     - Skills.jsx  +  Skills.css
     - Contact.jsx  +  Contacts.css
 
+
+### Project page consisting of a 9 grid responsive project cards featuring:
+- project title  
+- an image 
+- link to the code github repo
+- link to netlify 
+
+### approach
+Notes
+a card container 
+a heading
+an image 
+project description 
+a href with logo +  alt text using icons doc: https://icons8.com/icons/set/github 
+
+Having decided on what the components of the page are use the ``Thinking in React in 5 steps `` approach: Docs: https://reactjs.org/docs/thinking-in-react.html
+Step 1: Break The UI Into A Component Hierarchy...
+Step 2: Build A Static Version in React
+Step 3: Identify The Minimal (but complete) Representation Of UI State
+Step 4: Identify Where Your State Should Live
+Step 5: Add Inverse Data Flow
+
+
+
+
+
+refactor with rollout  
+cross hairs rollout 
+
+
+
+
 1. img  
 ## Styling
 - App.css with high level styles to passed to each .css file - I may update this with ``Styled Components css`` inside each component https://styled-components.com/docs/basics
@@ -78,8 +126,6 @@ Single page website responsive for;
 
 <!--  ### keywords
 react scroll effects parallax animation hook components 
-
-NPM Version Latest NPM Downloads Codecov Rate on Openbase
 
 Test and Lint Storybook Storybook -->
 

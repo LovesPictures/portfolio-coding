@@ -12,8 +12,12 @@ const SmallScreensNavbar = () =>{
                   {/* change the btn text based on whether translate is true or false */} 
                  {translate?<span>&#9776;</span>:<span>&times;</span>}
              </button>
+
              {/*hide and show the sidebar list based on whether translate is true or false*/}
-             <div id="sidebar-list" className={`${translate? "addTransiton": "removeTransition"}`}>
+
+             
+             {/* - How to increase the removeTransition so it is completely off the page  */}
+             <div id="sidebar-list" className={`${translate? "addTransition": "removeTransition"}`}>
                 <NavComponent
                     navClass="nav-small"
                     linkClassName = "nav-small-link"

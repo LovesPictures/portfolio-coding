@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 
 export const useWindowWidthAndHeight = ()=>{
     // 1- Get the size of window 
-    let windowInnerSize = [window.innerWidth, window.innerHeight];
+    const windowInnerSize = [window.innerWidth, window.innerHeight];
 
     // 2- Define the state variable windowSize and pass windowInnerSize as its initial value
-    let [ windowSize, setWidowSize ] = useState(windowInnerSize);
+    const [ windowSize, setWidowSize ] = useState(windowInnerSize);
 
     useEffect(()=>{
         const changeWindowSize = ()=>{
@@ -22,4 +22,5 @@ export const useWindowWidthAndHeight = ()=>{
     }, []);
     // 5- return the window size
     return windowSize;
+
 }

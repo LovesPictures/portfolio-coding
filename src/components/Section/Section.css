@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+
+
+
+
+.line {
+    height: 2px;
+    width: 100px;
+    background-color: var(--accent-1);
+    /* background-color: darkgrey; */
+    margin: 0 auto;
+  }
+
+
+.section{
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+    color: black;
+
+    border: 10px solid blueviolet;
+}
+
+
+
+.Section__header{
+    /* margin: 100px auto; */
+    font-size: var(--font-size-3);
+    padding: 10px;
+    font-family: var(--font-family-01);
+    /* border: 10px solid blueviolet; */
+}
+
+
+/* sections ----------------------------------------- */
+section,
+footer {
+  display: flex;
+  justify-content: center;
+  /* border: 10px solid rgb(226, 70, 43); */
+  /* font-size: 3rem; */
+}
+/* section heights  for development ------------------- */
+section {
+  height: 100vh; 
+  color: rosybrown; 
+  border: 10px solid green;
+}
+

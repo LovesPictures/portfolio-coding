@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --accent-1: rgba(232, 227, 22, 0.8);
+  --accent-2: #565656;
+
+  --accent-3: #f1f1f1; /* grey */
+  --accent-4: #fff; /* white */
+
+  /* font */
+  --font-family-01: "Share Tech Mono", monospace;
+  --font-family-02: "Garamond", sans-serif;
+
+  /* font size  */
+  --font-size-1: 18px;
+  --font-size-2: 24px;
+  --font-size-3: 25px;
+}
+
+body {
+  font-family: var(--font-family-02);
+}
+.text_Card {
+  /* background-color: red; */
+
+  /* padding-top: 30px; */
+  /* padding-bottom: 20px; */
+  /* padding: 0px 10px 20px 10px; */
+  /* padding-left: 5px;
+  padding-right: 20px;
+  padding-bottom: 40px; */
+
+  width: 90%;
+  margin: 0 auto;
+  /* border: 3px solid green; Temp border */
+}
+
+.line {
+  height: 2px;
+  width: 100px;
+  background-color: var(--accent-1);
+  /* background-color: darkgrey; */
+  margin: 0 auto;
+}
+
+.text_body {
+  /* margin-bottom: 40px; */
+  padding-top: 30px;
+  line-height: 10px;
+  /*background-color: green; /* test */
+}
+
+.text_heading {
+  display: inline-block;
+  font-size: 40px;
+  font-family: var(--font-family-01);
+  
+}

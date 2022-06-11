@@ -1,0 +1,103 @@
+/*
+
+using the BEM system 
+Block
+Element 
+sub element 
+
+block name __ element name
+
+mobile styling first - media queries for larger screens
+responsive breakpoints  device widths
+
+to be used when necessary 
+768px ipad portrait 
+1024px ipad landscape 
+
+flex for 1 dimensional layouts mobile/desktop etc in one direction row and columns.
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+for 2 dimensional layouts use grid for rows and columns
+
+Rachel Andrew - Grid by example https://gridbyexample.com/
+Mdn   display properties - block, inline-block 
+what are they for...
+when do we use them ...
+
+ --font-family-2:
+
+
+*/
+
+.Card {
+    display: inline-block;
+    max-width: 400px;
+    /* max-height: 400px; */
+    /* overflow: hidden; */
+    /* z-index: -100; */
+    border: 2px solid #000;
+    margin: 20px;
+}
+
+.Card__header {
+    color: pink;
+    /* bottom: 0;
+    left: 0; */
+    /* max-width: 100%; */
+    padding: 0 auto;
+    /* z-index: 100; */
+    margin: 0px 0px -10px 0px;
+}
+
+.Card__image {
+    width: 100%;
+    height: 10%;
+    object-fit: cover;
+    overflow: hidden;
+
+    /* float: left;
+    width: 50%;
+    height: 100vh;
+    object-fit: cover; */
+    /* justify-content: space-between; */
+}
+
+.Card__icon {
+    /* text-align: right; */
+    margin: -50% 7px 0 0;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+
+    /* }
+
+ li  { */
+    background-color: var(--accent-1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-flex;
+    /* padding: 7px; */
+
+}
+
+.Card__description {
+    position: relative;
+    /* right: 0; */
+    width: 80%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0 0;
+
+}
+
+.line {
+    height: 2px;
+    width: 100px;
+    background-color: var(--accent-1);
+    /* background-color: darkgrey; */
+    margin: 0 auto;
+  }
