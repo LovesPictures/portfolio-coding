@@ -132,3 +132,32 @@ Test and Lint Storybook Storybook -->
 
 
 <!-- https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images -->
+
+### card 
+
+1 write the HTML 
+```
+import img1 from "../img/1.jpg";
+import github from "../img/github.svg";
+import netlify from "../img/netlify.csv";
+
+  return (
+    <div className="Card">
+      <h3 className="Card__header">Card header</h3>
+      <img className="Card__image" src={img1} alt="#" />
+      <ul>
+        <a className="Card__icon" href="https://github.com/LovesPictures">
+          <img src={github} alt="#" />
+        </a>
+        <a className="Card__icon" href="https://jr-dogs-app.netlify.app">
+          <img src={netlify} width="30" alt="#" />
+        </a>
+      </ul>
+      <p className="Card__description">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s
+      </p>
+    </div>
+    
+```

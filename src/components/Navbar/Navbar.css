@@ -1,9 +1,10 @@
 /* navbar- header */
-body{
+body {
   font: var(--font-family-2);
 
 
 }
+
 header {
   position: fixed;
   top: 0;
@@ -16,6 +17,7 @@ header {
   justify-content: center;
   box-shadow: var(--box-shadow-1);
 }
+
 /* spacing desktop links */
 .header-inner {
   width: 90%;
@@ -55,8 +57,9 @@ header {
   outline: none;
   background-color: inherit;
   color: var(--font-color-2);
+  border: none;
   /* padding: 4px; */
-  
+
 }
 
 .hamburger-btn:hover {
@@ -67,14 +70,13 @@ header {
   -moz-transition: background-color 2s ease-out;
   -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
-
-
-
 }
+
 .addTransition {
   transform: translateX(180px);
   transition: transform 0.5s ease-in-out;
 }
+
 .removeTransition {
   transform: translateX(20px);
   transition: transform 0.5s ease-in-out;
@@ -83,7 +85,6 @@ header {
 /* navbar ------------------------------------------*/
 /* inner list  - inner panel  */
 #sidebar-list {
-  /* background-color: rgb(134, 125, 125); */
   background: var(--background-2);
   height: 100vh;
   width: 180px;
@@ -91,9 +92,9 @@ header {
   z-index: 2000;
   right: 0;
   top: 0;
-  /* same as the height of the closed navbar */
   margin-top: 70px;
 }
+
 /* container outer links */
 .nav-big {
   list-style: none;
@@ -137,6 +138,7 @@ header {
   width: 80%;
   /* border: 10px solid yellow; */
 }
+
 /*  inner links  - around text */
 .nav-small-link {
   cursor: pointer;

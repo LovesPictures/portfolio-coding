@@ -1,5 +1,5 @@
 import "./ParallaxIMG.css";
-import { Parallax, Background } from "react-parallax";
+import { Parallax  } from "react-parallax";
 
 const Container = (props) => (
   <Parallax bgImage={props.img} strength={200}>

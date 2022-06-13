@@ -25,66 +25,59 @@ what are they for...
 when do we use them ...
 */
 
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
 
-:root {
-    --background-1: #ffff;
-    --background-2: url(../img/grid.png) #e8e316cc;
+/* body {
+    font-family: var(--font-family-2);
+    align-items: center;
+    justify-content: center;
+} */
 
-    --accent-1: #e8e316cc;
-    --accent-3: #adff2f;
-    --accent-4: #ac2fff;
 
-    /* font */
-    --font-family-01: "Share Tech Mono", monospace;
-    --font-family-02: "Garamond", sans-serif;
-
-    /* font size  */
-    --font-size-1: 18px;
-    --font-size-2: 24px;
-    --font-size-3: 25px;
-}
-
-body {
-    font-family: var(--font-family-01);
-}
 
 .Card {
     display: inline-block;
-    max-width: 400px;
-    /* max-height: 400px; */
-    /* overflow: hidden; */
-    /* z-index: -100; */
-    border: 2px solid #000;
+    width: 400px;
+    height: 400px;
+    max-height: max-content;
+   
+    border: 2px solid var(--accent-4);
     margin: 20px;
+    border-radius: 2px;
+    box-shadow: var(--box-shadow-1);
+    position: relative;
+
+}
+
+.Card__ul {
+    position: absolute; 
+    bottom: 100px;
+    right:10px;
+
 }
 
 .Card__header {
-    color: pink;
-    /* bottom: 0;
-    left: 0; */
-    /* max-width: 100%; */
+    color: var(--font-color-2);
+    font-family: var(--font-family-2);
     padding: 0 auto;
-    /* z-index: 100; */
     margin: 0px 0px -10px 0px;
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
 }
 
 .Card__image {
     width: 100%;
-    height: 10%;
+    height: 100%; /* cannot use % use px wit cover */
     object-fit: cover;
-    overflow: hidden;
+    object-position: 0 0;
+    /* filter: grayscale(80%); */
+    /* filter:  grayscale(80%) brightness(120%);  */
+    z-index: -1; 
+    position: absolute;
+    top:0;
+    left:0
 }
-
 
 .Card__icon {
     /* text-align: right; */
@@ -93,31 +86,42 @@ body {
     align-items: center;
     justify-content: center;
 
-    /* }
-
- li  { */
-    background-color: var(--accent-1);
+    background-color: var(--background-3);
     width: 50px;
     height: 50px;
     border-radius: 50%;
     display: inline-flex;
     /* padding: 7px; */
+    box-shadow: var(--box-shadow-1);
 
 }
 
 .Card__description {
-    position: relative;
+    /* position: relative; */
     box-sizing: border-box;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* width: 80%; */
-    height: 100%;
+   
     margin-top: 0 0;
     text-align: justify;
-    font-family: var(--font-family-02);
+    font-family: var(--font-family-2);
+
+    color: var(--font-color-2);
+    
+    position: absolute;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:pre-wrap;
+    height: 90px;
+    margin:0;
+    padding: 12px;
+    bottom: 0;
+
 
 }
+
 
 .Line {
     height: 2px;

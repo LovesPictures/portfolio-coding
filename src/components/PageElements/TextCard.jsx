@@ -16,6 +16,6 @@ export default function TextCard(props) {
           <div className="text_body">{props.children}</div>
         </div>
       </ScrollAnimation>
-    </div>
+     </div>
   );
 }

@@ -1,9 +1,8 @@
-// Header.js
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "../Navbar/Navbar";
 import { Link } from "react-scroll"; // react-scroll is a library for scrolling in React
-import SmallScreensNavbar from "./SmallScreensNavbar";
-import { useWindowWidthAndHeight } from "./CustomHooks";
+import SmallScreensNavbar from "../Navbar/SmallScreensNavbar";
+import { useWindowWidthAndHeight } from "../CustomHooks";
 
 /*
 In this component there are 4 number of elements 

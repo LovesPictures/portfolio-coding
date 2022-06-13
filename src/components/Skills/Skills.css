@@ -1,0 +1,36 @@
+
+.Skills__ul {
+    /* position: absolute;  */
+    bottom: 100px;
+    right:10px;
+
+}
+
+.Skills__header {
+    color: var(--font-color-2);
+    font-family: var(--font-family-2);
+    padding: 0 auto;
+    margin: 0px 0px -10px 0px;
+    /* position: relative; */
+    bottom: 100px;
+    left: 10px;
+}
+
+
+
+.Skills__icon {
+    /* text-align: right; */
+    margin: 20px 7px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--background-3);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-flex;
+    /* padding: 7px; */
+    box-shadow: var(--box-shadow-1);
+
+}

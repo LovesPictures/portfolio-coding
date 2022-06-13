@@ -1,18 +1,22 @@
+
 import React from 'react';
-import Container from "./PageElements/ParallaxIMG";
-import TextCard from "./PageElements/TextCard";
+import Container from '../PageElements/ParallaxIMG';
+import TextCard from "../PageElements/TextCard";
 
 // import ServiceCard from "../components/PageElements/ServiceCard";
+
+import "../Section/Section.css";
+import "../About/About.css";
 
 // Parallax images
 const image1 = "https://lovespictures.com/1.jpg";
 const image2 = "https://lovespictures.com/pe/3.jpg";
 const image3 = "https://lovespictures.com/pe/5.jpg";
 
-export const Projects = () => {
+export const About = () => {
   return (
     <section >
-<TextCard id="Projects" name="Projects"> </TextCard>
+<TextCard id="About" name="About"> </TextCard>
 <p className="para-1">
             Artist, Lecturer and Creative Coder, specialising in mobile, screen
             based playful interactive serious games in immersive and real world
@@ -32,4 +36,5 @@ export const Projects = () => {
   )
 }
 
-// export default Projects
+
+

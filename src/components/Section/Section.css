@@ -2,8 +2,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 
 
+.Section__Container{
+  position:relative;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  border: 10px solid pink;     
+}
 
 
+
+.Section__header{
+  /* margin: 100px auto; */
+  font-size: var(--font-size-3);
+  padding: 10px;
+  font-family: var(--font-family-01);
+  border: 10px solid blueviolet;
+}
 
 .line {
     height: 2px;
@@ -14,7 +29,8 @@
   }
 
 
-.section{
+
+/* .section{
     display: flex;
     justify-content: center;
    
@@ -22,31 +38,62 @@
     color: black;
 
     border: 10px solid blueviolet;
-}
+    /* max-width: 80%; 
+} */
 
 
-
-.Section__header{
-    /* margin: 100px auto; */
-    font-size: var(--font-size-3);
-    padding: 10px;
-    font-family: var(--font-family-01);
-    /* border: 10px solid blueviolet; */
-}
 
 
 /* sections ----------------------------------------- */
-section,
+
 footer {
-  display: flex;
-  justify-content: center;
-  /* border: 10px solid rgb(226, 70, 43); */
+  height: 10vh;  /* spec this in the footer component */
+  border: 10px solid green;
+
+  
   /* font-size: 3rem; */
 }
 /* section heights  for development ------------------- */
 section {
-  height: 100vh; 
-  color: rosybrown; 
-  border: 10px solid green;
+  display: flex;
+  /* justify-content: center;
+  height: 50vh; 
+  color: rosybrown;  */
+  /* border: 10px solid green; */
 }
 
+/* Area for Template - for the section area   -----------------------------------------*/
+
+
+#Home {
+    background-color: #fff;
+    /* height: 50vh; */
+    
+  }
+  #About {
+    /* background-color: #f9e6d2; */
+    height: 50vh;
+  }
+  #Projects {
+    /* background-color: #e0e7ca;*/
+    /* height: 50vh;  */
+  }
+  #Skills {
+    /* background-color: pink; */
+    /* height: 50vh; */
+    /* position: relative; */
+  }
+  #Contact {
+    background-color: #d7ecf6;
+    /* height: 50vh; */
+  }
+  footer {
+    /* display: flex; */
+    justify-content: center;
+    /* height: 10vh; 
+    border: 10px solid rgb(226, 70, 43); */
+    background: #505152;
+    color: white;
+
+  }
+  
