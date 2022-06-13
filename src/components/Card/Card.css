@@ -41,8 +41,8 @@ when do we use them ...
     height: 400px;
     max-height: max-content;
    
-    border: 2px solid var(--accent-4);
-    margin: 20px;
+    /* border: 2px solid var(--accent-4); */
+    margin: 1px;
     border-radius: 2px;
     box-shadow: var(--box-shadow-1);
     position: relative;

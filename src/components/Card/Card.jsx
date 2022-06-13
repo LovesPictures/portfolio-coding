@@ -1,9 +1,10 @@
 import React from "react";
-import img1 from "../img/1.jpg";
-import github from "../img/github.svg";
-import netlify from "../img/netlify.csv";
 
-// import netlify from "../Section/Section.css";
+import img1 from "../img/1.jpg";
+// import github from "../img/github.svg";
+// import netlify from "../img/netlify.csv";
+// refactored
+import Icons from "../img/Icons"
 
 import "../Section/Section.css";
 import "../Card/Card.css";
@@ -25,10 +26,11 @@ export const Card = () => {
       {/* container for the icons */}
       <ul className="Card__ul">
         <a className="Card__icon" href="https://github.com/LovesPictures">
-          <img src={github} alt="#" />
+          <img src={Icons.iconGithub} alt="#" />
         </a>
         <a className="Card__icon" href="https://jr-dogs-app.netlify.app">
-          <img src={netlify} width="30" alt="#" />
+
+          <img src={Icons.iconNetlify} width="30" alt="#" />
         </a>
       </ul>
       <p className="Card__description">
