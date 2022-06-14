@@ -4,6 +4,10 @@ import { Link } from "react-scroll"; // react-scroll is a library for scrolling 
 import SmallScreensNavbar from "../Navbar/SmallScreensNavbar";
 import { useWindowWidthAndHeight } from "../CustomHooks";
 
+// import logo form icons
+import Icons from "../img/Icons"
+import "../Section/Section.css";
+
 /*
 In this component there are 4 number of elements 
 1. navbar.js component to set up the links 
@@ -19,10 +23,13 @@ const Header = () => {
   const [width, height] = useWindowWidthAndHeight();
   console.log(height);
   return (
-    <header>
+    <header className="Navbar__header">
       <div className="header-inner">
         <Link to="Home" smooth={true} className="logo nav-link">
-          JR
+          {/* JR */}
+          {/* logo */}
+          <img className="Logo__icon" src={ Icons.iconLogo} alt="Html logo" /> 
+          {/* <i className="fab fa-react"></i>  */}
         </Link>
         {/*if the width of the window is bigger than 1000px use <Navbar/>,
                    else user <SmallScreensNavbar/>*/}

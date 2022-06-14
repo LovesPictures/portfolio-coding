@@ -1,0 +1,10 @@
+.Footer__header {
+    /* margin: 100px auto; */
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-1);
+    color: var(--font-color-3);
+    padding: 10px 0px;
+    /* margin: 50%; */
+    text-align: center;
+    border: 10px solid blueviolet;
+  }

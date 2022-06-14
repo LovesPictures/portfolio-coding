@@ -1,13 +1,4 @@
-
-
-.About__ul {
-    /* position: absolute;  */
-    bottom: 100px;
-    right:10px;
-
-}
-
-.About__header {
+.Home__header {
     color: var(--font-color-2);
     font-family: var(--font-family-2);
     padding: 0 auto;
@@ -16,8 +7,3 @@
     bottom: 100px;
     left: 10px; */
 } 
-
-
-
-
-

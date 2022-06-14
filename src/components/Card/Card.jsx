@@ -21,7 +21,7 @@ image https://create-react-app.dev/docs/adding-images-fonts-and-files/
 export const Card = () => {
   return (
     <div className="Card">
-      <h3 className="Card__header">Card header</h3>
+      <h3 className="Card__header ">Project Name</h3>
       <img className="Card__image" src={img1} alt="#" />
       {/* container for the icons */}
       <ul className="Card__ul">
@@ -33,8 +33,9 @@ export const Card = () => {
           <img src={Icons.iconNetlify} width="30" alt="#" />
         </a>
       </ul>
+      {/* roll over project name for more information */}
       <p className="Card__description">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
+        <strong>Project Description:</strong> Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s
       </p>

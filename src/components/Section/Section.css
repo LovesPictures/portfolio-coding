@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 
 
+
+
 .Section__Container{
   position:relative;
   max-width: 75%;
@@ -11,15 +13,82 @@
   z-index: -10;  
 }
 
-
-
-.Section__header{
+.Section__header {
   /* margin: 100px auto; */
+  font-family: var(--font-family-1);
   font-size: var(--font-size-3);
-  padding: 10px;
-  font-family: var(--font-family-01);
+  color: var(--font-color-3);
+  padding: 40px 0px;
+  /* margin: 50%; */
+  text-align: center;
   border: 10px solid blueviolet;
 }
+
+
+.p__description {
+  /* box-sizing: border-box; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* width: 80%; */
+ 
+  margin-top: 0 0;
+  text-align: justify;
+  font-family: var(--font-family-2);
+  color: var(--font-color-1);
+  font-size: var(--font-size-1);
+  margin:0;
+  /* padding: 20px 40px; */
+  bottom: 0;
+  line-height: 1.6;
+
+}
+
+
+/* Parallax background image -------------------------------- */
+.Section__header-parallax {
+  position: relative;
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display : flex;
+  align-items: center;
+  justify-content:center;
+  border: 10px solid pink;
+  color:white;
+  height: 400px;
+  
+}
+
+
+.img1 {
+  background-image: url('https://lovespictures.com/1.jpg');
+  /* height: 100%; */
+}
+
+
+/* .img1 {
+  background-image: url('https://images.pexels.com/photos/1154619/pexels-photo-1154619.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  height: 100%;
+} */
+
+.img2 {
+  background-image: url('https://images.pexels.com/photos/2506209/pexels-photo-2506209.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  height: 50%;
+}
+
+.img3 {
+  background-image: url('https://images.pexels.com/photos/772520/pexels-photo-772520.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+  height: 80%;
+}
+
+.img4 {
+  background-image: url('https://images.pexels.com/photos/1154619/pexels-photo-1154619.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  height: 60%;
+}
+
+
 
 .line {
     height: 2px;
@@ -47,13 +116,13 @@
 
 /* sections ----------------------------------------- */
 
-footer {
-  height: 10vh;  /* spec this in the footer component */
+/* footer {
+  height: 10vh;  /* spec this in the footer component 
   border: 10px solid green;
+ 
+  /* font-size: 3rem; 
+} */
 
-  
-  /* font-size: 3rem; */
-}
 /* section heights  for development ------------------- */
 section {
   display: flex;
@@ -67,13 +136,13 @@ section {
 
 
 #Home {
-    background-color: #fff;
+    /* background-color: #fff; */
     /* height: 50vh; */
     
   }
   #About {
     /* background-color: #f9e6d2; */
-    height: 50vh;
+    /* height: 50vh; */
   }
   #Projects {
     /* background-color: #e0e7ca;*/
@@ -85,16 +154,16 @@ section {
     /* position: relative; */
   }
   #Contact {
-    background-color: #d7ecf6;
+    /* background-color: #d7ecf6; */
     /* height: 50vh; */
   }
   footer {
     /* display: flex; */
-    justify-content: center;
+    /* justify-content: center; */
     /* height: 10vh; 
     border: 10px solid rgb(226, 70, 43); */
-    background: #505152;
-    color: white;
+    /* background: #505152; */
+    /* color: white; */
 
   }
   

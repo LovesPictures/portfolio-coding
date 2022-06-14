@@ -161,3 +161,39 @@ import netlify from "../img/netlify.csv";
     </div>
     
 ```
+
+Refactored to card.js to include an image object to handle all the .svg images, this did not work with .jpg or .png.
+
+```
+
+import img1 from "../img/1.jpg"; - this did no work with the image object 
+import Icons from "../img/Icons";
+
+import "../Section/Section.css";
+import "../Card/Card.css";
+
+export const Card = () => {
+  return (
+    <div className="Card">
+      <h3 className="Card__header">Project Name</h3>
+      <img className="Card__image" src={img1} alt="#" />
+      {/* container for the icons */}
+      <ul className="Card__ul">
+        <a className="Card__icon" href="https://github.com/LovesPictures">
+          <img src={Icons.iconGithub} alt="#" />
+        </a>
+        <a className="Card__icon" href="https://jr-dogs-app.netlify.app">
+
+          <img src={Icons.iconNetlify} width="30" alt="#" />
+        </a>
+      </ul>
+      {/* roll over project name for more information */}
+      <p className="Card__description">
+        <strong>Project Description:</strong> Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s
+      </p>
+    </div>
+  );
+};
+```

@@ -41,7 +41,7 @@ export const Projects = () => {
   return (
     
     <div id="Projects">
-      <h2 className="Section__header">Projects</h2>
+      <h2 className="Section__header Section__header Section__header-parallax img2">Projects</h2>
 
       <div className="Section__Container">
         <Card/>   
