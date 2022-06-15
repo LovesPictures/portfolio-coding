@@ -67,10 +67,10 @@ when do we use them ...
 }
 
 .Card__image {
-    min-width: 100%;
+    width: 100%;
     height: 100%; /* cannot use % use px wit cover */
     object-fit: cover;
-    object-position: 0 0;
+    /* object-position: 0 0; */
     /* filter: grayscale(80%); */
     /* filter:  grayscale(80%) brightness(120%);  */
     z-index: -1; 

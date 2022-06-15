@@ -11,5 +11,24 @@ const Footer = () => {
     </div>
   )
 }
-
 export default Footer;
+
+
+// import React from "react";
+
+// export function Footer() {
+//   return (
+//     <footer className="github">
+//       <h3>
+//         Jude Ricketts on: 
+//          <a
+//           href="https://github.com/LovesPictures"
+//           target="_blank"
+//           rel="noopener noreferrer nofollow"
+//         >
+//            Github
+//         </a>
+//       </h3>
+//     </footer>
+//   );
+// }

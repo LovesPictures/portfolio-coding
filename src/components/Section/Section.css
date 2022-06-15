@@ -6,11 +6,11 @@
 
 .Section__Container{
   position:relative;
-  max-width: 75%;
+  /* max-width: 90%; */
   display: block;
   margin: 0 auto;
   border: 10px solid pink;   
-  z-index: -10;  
+  /* z-index: -10;   */
 }
 
 .Section__header {
@@ -18,12 +18,19 @@
   font-family: var(--font-family-1);
   font-size: var(--font-size-3);
   color: var(--font-color-3);
-  padding: 40px 0px;
+  /* padding: 40px 0px; */
   /* margin: 50%; */
   text-align: center;
-  border: 10px solid blueviolet;
+  /* border: 10px solid blueviolet; */
 }
 
+.Section__line {
+  height: 2px;
+  width: 100px;
+  background-color: var(--accent-1);
+  /* background-color: darkgrey; */
+  margin: 0 auto;
+}
 
 .p__description {
   /* box-sizing: border-box; */
@@ -41,6 +48,10 @@
   /* padding: 20px 40px; */
   bottom: 0;
   line-height: 1.6;
+    /* max-width: 90%; */
+    padding: 10px 20px;
+    /* border: 10px solid blueviolet; */
+    
 
 }
 
@@ -55,7 +66,7 @@
   display : flex;
   align-items: center;
   justify-content:center;
-  border: 10px solid pink;
+  /* border: 10px solid pink; */
   color:white;
   height: 400px;
   
@@ -67,27 +78,24 @@
   /* height: 100%; */
 }
 
-
-/* .img1 {
-  background-image: url('https://images.pexels.com/photos/1154619/pexels-photo-1154619.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
-  height: 100%;
-} */
-
 .img2 {
-  background-image: url('https://images.pexels.com/photos/2506209/pexels-photo-2506209.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
-  height: 50%;
+  background-image: url('https://lovespictures.com/pe/3.jpg');
+  /* https://images.pexels.com/photos/2506209/pexels-photo-2506209.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 */
 }
 
 .img3 {
-  background-image: url('https://images.pexels.com/photos/772520/pexels-photo-772520.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
-  height: 80%;
+  background-image: url('https://lovespictures.com/pe/5.jpg');
+  /* https://images.pexels.com/photos/772520/pexels-photo-772520.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500   height: 80%; */
 }
 
 .img4 {
-  background-image: url('https://images.pexels.com/photos/1154619/pexels-photo-1154619.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
-  height: 60%;
+  background-image: url('https://lovespictures.com/pe/2.jpg');
+  /* height: 60%; */
 }
 
+.img5 {
+  background-image: url('https://lovespictures.com/4.jpg');
+} 
 
 
 .line {

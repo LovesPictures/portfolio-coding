@@ -16,5 +16,6 @@
    iconTerminal: require("./terminal.svg").default,
    iconNext: require("./next.svg").default,
    iconLogo: require("./logo.svg").default,
+  //  icongithubPages: require("./githubPages.svg").default,
 }
 export default Icons

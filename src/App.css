@@ -17,13 +17,12 @@
   --accent-1: #e8e316cc;
   --accent-3: #adff2f;
   --accent-4: #545455; 
-  /* #d4d4d4; */
 
   /* font */
   --font-family-1: 'Roboto condensed', monospace;
   --font-family-2: "DM Sans", sans-serif;
 
-  /* font size  */
+  /* font size  look at H tags leave gaps between the numbers */
   --font-size-1: 18px;
   --font-size-2: 24px;
   --font-size-3: 34px; 

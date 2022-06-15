@@ -10,6 +10,7 @@ export const About = () => {
   return (
     <div id="About">
       <h2 className="Section__header Section__header-parallax img1 ">About - Jude</h2>
+      <div className="Section__line"></div>
       <div className="Section__Container">
           <p className="p__description">
             Artist, Lecturer and Creative Coder, specialising in mobile, screen
@@ -36,7 +37,7 @@ function addParallax(selector){
     //getting the parallax element e.g. image, then get the element distance form the top of the screen
      let picScroll = document.querySelector(selector).getBoundingClientRect().top
      //set the elements background position to a multiple of the scrolled distance in px
-    document.querySelector(selector).style.backgroundPositionY = `${picScroll*0.4}px`
+    document.querySelector(selector).style.backgroundPositionY = `${picScroll*0.7}px`
    
   }
   // initalise the parallax
@@ -50,7 +51,11 @@ function addParallax(selector){
 }
 // when the page is finish loading add parallax to elements
 window.onload = (event) => {
-addParallax(".Section__header-parallax")
+addParallax(".Section__header-parallax.img1")
+addParallax(".Section__header-parallax.img2")
+addParallax(".Section__header-parallax.img3")
+addParallax(".Section__header-parallax.img4")
+
 };
 
 

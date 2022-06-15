@@ -197,3 +197,21 @@ export const Card = () => {
   );
 };
 ```
+
+next refactor of the cards model. 
+Set up an array, with a ordered list object 
+render the icons from icons.jsx component
+
+```
+export const projectData = [
+  {
+    projectID: "001",
+    img: "https://raw.githubusercontent.com/LovesPictures/baby-names-picker/main/example-screenshots/BN__completed__01.JPG",
+    title: "Baby Names",
+    description: "Make a React app which shows some baby names and lets you pick your favourites form the json data provided",
+     // githubIcon: {Icons.iconGithub},
+    linkGithub: "https://github.com/LovesPictures/baby-names-picker",
+    // netlifyIcon: {Icons.iconNetlify},
+    netlify: "https://jr-baby-names-picker.netlify.app",
+  },
+  ```
