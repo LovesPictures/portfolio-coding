@@ -23,11 +23,16 @@
   /* margin: 0 auto; */
   text-align: center;
   /* border: 10px solid blueviolet; */
-  
 }
 
+/* To do - 
+Grow the Section__Container 90% wide from mobile to desktop 40% wide.
+Grow the Card from mobile 100% to desktop 55% to a particular size.
+Add a Card__Description-container .Card__header - flex to the next line 
+
+*/
 .Section__Container, .Section__header {
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
   /* height: 400px; */
 }
