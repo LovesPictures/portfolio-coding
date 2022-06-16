@@ -35,13 +35,17 @@ when do we use them ...
 
 
 .Card {
-    display: inline-block;    
-    width: 370px;
+    /* display: inline-block;     */
+    /* width: 370px; */
+    width: calc(50% - 20px);
     height: 350px;
     position: relative;
     justify-content: space-evenly;
-    margin: 20px p0x;
+    margin: 30px 0px;
 }
+
+/* container 
+align-self: flex-end; */
 
 .Card__ul {
     position: absolute; 
