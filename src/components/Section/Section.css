@@ -6,23 +6,32 @@
 
 .Section__Container{
   position:relative;
-  /* max-width: 90%; */
   display: block;
-  margin: 0 auto;
-  border: 10px solid pink;   
-  /* z-index: -10;   */
+  /* height: 400px; */
+  /* margin: 100px; */
+  /* width: 75%; */
+  /* margin: 0 auto; */
+  /* border: 10px solid pink;    */
 }
 
 .Section__header {
-  /* margin: 100px auto; */
   font-family: var(--font-family-1);
-  font-size: var(--font-size-3);
+  font-size: var(--font-size-1);
   color: var(--font-color-3);
-  /* padding: 40px 0px; */
-  /* margin: 50%; */
+  /* same as Section__container; */
+  /* width: 75%; */
+  /* margin: 0 auto; */
   text-align: center;
   /* border: 10px solid blueviolet; */
+  
 }
+
+.Section__Container, .Section__header {
+  width: 80%;
+  margin: 0 auto;
+  /* height: 400px; */
+}
+
 
 .Section__line {
   height: 2px;
@@ -30,28 +39,19 @@
   background-color: var(--accent-1);
   /* background-color: darkgrey; */
   margin: 0 auto;
+  
 }
 
 .p__description {
-  /* box-sizing: border-box; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* width: 80%; */
- 
-  margin-top: 0 0;
+  margin: 50px 0px ;
   text-align: justify;
   font-family: var(--font-family-2);
   color: var(--font-color-1);
-  font-size: var(--font-size-1);
-  margin:0;
-  /* padding: 20px 40px; */
-  bottom: 0;
+  font-size: var(--font-size-3);
   line-height: 1.6;
-    /* max-width: 90%; */
-    padding: 10px 20px;
     /* border: 10px solid blueviolet; */
-    
+
+
 
 }
 
@@ -59,16 +59,18 @@
 /* Parallax background image -------------------------------- */
 .Section__header-parallax {
   position: relative;
-  background-position: 0px 0px;
+  /* background-position: 0px 0px; */
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  
   display : flex;
   align-items: center;
   justify-content:center;
   /* border: 10px solid pink; */
   color:white;
-  height: 400px;
+  height: 700px;
   
 }
 

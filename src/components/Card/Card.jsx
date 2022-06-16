@@ -31,6 +31,8 @@ export const Card = ({project}) => {
         <a className="Card__icon" target="_blank" href={project.linkNetlify}>
 
           <img src={Icons.iconNetlify} width="30" alt="#" />
+          {/* To do - assing a name to the icons */}
+          <p>{project.iconName}</p>
         </a>
       </ul>
       {/* roll over project name for more information */}

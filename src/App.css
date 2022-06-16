@@ -22,11 +22,12 @@
   --font-family-1: 'Roboto condensed', monospace;
   --font-family-2: "DM Sans", sans-serif;
 
-  /* font size  look at H tags leave gaps between the numbers */
-  --font-size-1: 18px;
-  --font-size-2: 24px;
-  --font-size-3: 34px; 
   
+  --font-size-1: 55px;
+  --font-size-2: 34px;
+  --font-size-3: 22px;
+  --font-size-4: 16px;  
+
 
   --font-color-1: #545455;
   --font-color-2: #ffff;
@@ -34,7 +35,7 @@
 
 
   /* styling */
-  --box-shadow-1: 1px 1px 1px 1px rgba(116, 110, 110, 0.199);
+  --box-shadow-1: 1px 1px 1px 1px rgba(136, 132, 132, 0.199);
   --box-shadow-2: 0 12px 12px var(var(--accent-3));
 
 
@@ -81,8 +82,11 @@ body {
   /* border-color: var(--border-color-1); */
 
   /* at the top end of the h tag range  */
+
 }
-h1{
+
+
+/* h1{
 
   font-size: 34px;
 }
@@ -97,7 +101,8 @@ h3{
 
 h4{
   font-size: 22px;
-}
+} */
+
 /* 
 p {
   font-size: 14px;

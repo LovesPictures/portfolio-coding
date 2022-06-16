@@ -34,26 +34,19 @@ when do we use them ...
 } */
 
 
-
 .Card {
-    display: inline-block;
-    width: 400px;
-    height: 400px;
-    max-height: max-content;
-   
-    /* border: 2px solid var(--accent-4); */
-    margin: 1px;
-    border-radius: 2px;
-    box-shadow: var(--box-shadow-1);
+    display: inline-block;    
+    width: 370px;
+    height: 350px;
     position: relative;
-
+    justify-content: space-evenly;
+    margin: 20px p0x;
 }
 
 .Card__ul {
     position: absolute; 
     bottom: 100px;
     right:10px;
-
 }
 
 .Card__header {
@@ -76,7 +69,10 @@ when do we use them ...
     z-index: -1; 
     position: absolute;
     top:0;
-    left:0
+    left:0;
+    /* border-radius: 50%; */
+    /* border: 0.4px solid #585858; */
+    box-shadow: var(--box-shadow-1);
 }
 
 .Card__icon {
