@@ -5,14 +5,14 @@ import "./Footer.css";
 import Icons from "../img/Icons"
 
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <div id="Footer">
     <div className="Footer__header ">
     {/* <div className="Section__Container">  */}
         <ul className="Footer__ul">
          {/* access icons from the images */}
-          <img className="Footer__icon"  src={ Icons.iconInstagram} onclick="(https://www.instagram.com/lovespictures__/)" target="_blank" alt="instagram logo" />  
+          <img className="Footer__icon" src={Icons.iconInstagram} onclick="(https://www.instagram.com/lovespictures__/)" target="_blank" alt="instagram logo" />  
           <img className="Footer__icon" src={ Icons.iconLinkedin} alt="Javascript logo" />  
           <img className="Footer__icon" src={ Icons.iconInstagram} alt="React logo" />  
           <img className="Footer__icon" src={ Icons.iconTwitter} alt="React logo" /> 
@@ -21,7 +21,7 @@ const Footer = () => {
      </div>
   )
 }
-export default Footer;
+
 
 
 

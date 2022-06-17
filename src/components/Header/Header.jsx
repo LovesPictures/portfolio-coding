@@ -19,7 +19,7 @@ these functions called in the header.js component as  navbar into Header
 */
 
 
-const Header = () => {
+export const Header = () => {
   // use our custom hook to get the the window size
   const [width, height] = useWindowWidthAndHeight();
   console.log(height);
@@ -47,4 +47,3 @@ const Header = () => {
   );
 };
 
-export default Header;

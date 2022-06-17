@@ -36,11 +36,11 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: var(--background-3);
+  /* background-color: var(--background-3); */
   width: 40px;
   height: 40px;
   padding: 5px;
   border-radius: 50%;
   display: inline-flex;
-  box-shadow: var(--box-shadow-1);
+  /* box-shadow: var(--box-shadow-1); */
 }

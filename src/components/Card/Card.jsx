@@ -36,10 +36,10 @@ export const Card = ({ project }) => {
         </a>
       </ul>
       {/* roll over project name for more information */}
-      <p className="Card__description">
+      <article className="Card__description">
         {/* <strong>Project Description:</strong> {project.description} */}
         {project.description}
-      </p>
+      </article>
     </div>
   );
 };

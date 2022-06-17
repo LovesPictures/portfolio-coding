@@ -115,7 +115,7 @@ align-self: flex-end; */
     margin-top: 0 0;
     text-align: justify;
     font-family: var(--font-family-2);
-    font-size: var(--font-size-3);
+    font-size: var(--font-size-4);
     color: var(--font-color-3);
     background-color: var(--background-3);
     
@@ -137,3 +137,10 @@ align-self: flex-end; */
     background-color: pink;
     margin: 0 auto;
 }
+
+/* flex reference  https://www.w3schools.com/cssref/tryit.asp?filename=trycss_text-align 
+
+flex references https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container 
+
+https://www.youtube.com/watch?v=4KxHcbQ8GYQ&t=634s&ab_channel=AngelaDelise
+*/

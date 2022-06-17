@@ -2,7 +2,7 @@
 import React from 'react'
 import "./Home.css";
 
-const Home = () => {
+export const Home = () => {
   return (
     <div id="Home">
     <div className="Home__header "></div>
@@ -10,4 +10,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+

@@ -12,7 +12,7 @@ export const About = () => {
       <h2 className="Section__header Section__header-parallax img1 ">About - Jude</h2>
       <div className="Section__line"></div>
       <div className="Section__Container">
-          <p className="p__description">
+          <article className="p__description">
             Artist, Lecturer and Creative Coder, specialising in mobile, screen
             based playful interactive serious games in immersive and real world
             spaces. My skill set includes photography, moving image, creative
@@ -23,7 +23,7 @@ export const About = () => {
             Festival, Digital Inequalities University of Brighton, School of
             History, Art History &amp; Philosophy University of Sussex, in
             subjects related to digital humanities and digital geographies.
-          </p>
+          </article>
       </div>
     </div>
   );

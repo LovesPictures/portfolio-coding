@@ -16,6 +16,7 @@
 
 
   --accent-1: #e8e316cc;
+  --accent-2: #fb00ff99;
   --accent-3: #adff2f;
   --accent-4: #545455; 
 
@@ -43,9 +44,9 @@
 
 
   /* main border */
-  /* --border-color-1: #afd4ec #afd4ec #fecacc #fecacc;
+  --border-color-1: #545455; 
   --border-style-1: 10px dotted;
-  --border-radius-1: 20px; */
+  --border-radius-1: 20px; 
 
   /* to do - set to 10px */
   --border-radius-2: 3px;
