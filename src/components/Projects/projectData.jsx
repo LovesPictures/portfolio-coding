@@ -12,7 +12,7 @@ translate and transform it into a card component
 data into DOM
 */
 
-import Icons from "../img/Icons"
+// import Icons from "../img/Icons"
 
 // const project__img1 = "https://lovespictures.com/1.jpg";
 // const project__img2 = "https://lovespictures.com/pe/3.jpg";

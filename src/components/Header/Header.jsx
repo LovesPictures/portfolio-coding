@@ -18,6 +18,7 @@ In this component there are 4 number of elements
 these functions called in the header.js component as  navbar into Header 
 */
 
+
 const Header = () => {
   // use our custom hook to get the the window size
   const [width, height] = useWindowWidthAndHeight();
@@ -28,7 +29,7 @@ const Header = () => {
         <Link to="Home" smooth={true} className="logo nav-link">
           {/* JR */}
           {/* logo */}
-          <img className="Logo__icon" src={ Icons.iconLogo} alt="Html logo" /> 
+          <img className="Logo__icon" src={Icons.iconLogo} alt="Html logo" /> 
           {/* <i className="fab fa-react"></i>  */}
         </Link>
         {/*if the width of the window is bigger than 1000px use <Navbar/>,

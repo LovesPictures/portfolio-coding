@@ -1,20 +1,25 @@
+/* .Header__navbar */
 header {
-  font: inherit;
+  font: var(--font-family-2);
+  font-weight: var(--font-weight-3);
   position: sticky;
   top: 0;
   height: 70px;
 
   background: var(--background-2);
+  image-rendering: pixelated;  
+  /* Anti-aliasing use even numbers  */
+  background-size: 4px 4px;
   width: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   box-shadow: var(--box-shadow-1);
-  z-index:1;
-  /* border: 10px solid red; */
+  z-index: 10;
 }
 
 /* spacing desktop links */
+/* .Header__navbar-desktop-links */
 .header-inner {
   width: 90%;
   display: flex;
@@ -31,13 +36,13 @@ header {
   padding: 2px;
 } */
 
+/* .Header__navbar-logo */
 .Logo__icon {
   /* text-align: right; */
   /* margin: 20px 7px; */
   /* display: flex; */
   /* align-items: center; */
   justify-content: center;
-
   /* background-color: var(--background-3); */
   width: 50px;
   height: 50px;
@@ -46,14 +51,15 @@ header {
   display: inline-flex;
   /* padding: 7px; */
   box-shadow: var(--box-shadow-1);
-  z-index:10000;
+  z-index: 10000;
+  
 }
 
-
+/*.Header__navbar-logo:hover*/
 .logo:hover {
   color: var(--font-color-2);
   background-color: var(--accent-4);
-  padding: 2px;
+  padding: 5px;
   cursor: pointer;
   border-radius: 50%;
   -webkit-transition: background-color 2s ease-out;
@@ -62,13 +68,13 @@ header {
   transition: background-color 2s ease-out;
 }
 
-
+/* .Header__navbar-hamburger-btn */
 .hamburger-btn {
   font-size: var(--font-size-3);
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
   width: 40px;
-  height: 35px;
+  height: 40px;
   right: 30px;
   outline: none;
   background-color: inherit;
@@ -77,7 +83,7 @@ header {
   /* padding: 4px; */
 
 }
-
+/*.Header__navbar-hamburger-btn:hover*/
 .hamburger-btn:hover {
   /* color: var(--font-color-2); */
   background-color: var(--accent-4);
@@ -88,18 +94,21 @@ header {
   transition: background-color 2s ease-out;
 }
 
+/* .Header__navbar-Add-transitionX */
 .addTransition {
   transform: translateX(180px);
   transition: transform 0.5s ease-in-out;
 }
 
+/* .Header__navbar-Remove-transitionX */
 .removeTransition {
   transform: translateX(20px);
   transition: transform 0.5s ease-in-out;
 }
 
-/* navbar ------------------------------------------*/
+/* Mobile navigation -------------------------------------------------- */
 /* inner list  - inner panel  */
+/* .Header__navbar-mobile-inner-panel */
 #sidebar-list {
   background: var(--background-2);
   height: 100vh;
@@ -109,37 +118,6 @@ header {
   right: 0;
   top: 0;
   margin-top: 70px;
-}
-
-/* container outer links */
-.nav-big {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  width: 50%;
-  font-weight: bold;
-  /* border: 10px solid green; */
-}
-
-/* outer links - around text */
-.nav-big-link {
-  cursor: pointer;
-  color: var(--font-color-2);
-  text-decoration: none !important;
-  padding: 5px;
-  width: 150px;
-  /* border: 5px solid pink; */
-}
-
-.nav-big-link:hover {
-  color: var(--font-color-2);
-  background-color: var(--accent-4);
-  padding: 5px;
-  cursor: pointer;
-  -webkit-transition: background-color 2s ease-out;
-  -moz-transition: background-color 2s ease-out;
-  -o-transition: background-color 2s ease-out;
-  transition: background-color 2s ease-out;
 }
 
 /* container - inner links */
@@ -174,3 +152,39 @@ header {
   -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
 }
+
+/* Desktop navigation -------------------------------------------------- */
+/* .Header__navbar-desktop-container  */
+/* container outer links */
+.nav-big {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  font-weight: bold;
+  /* border: 10px solid green; */
+}
+
+/* outer links - around text */
+/* .Header__navbar-desktop-links */
+.nav-big-link {
+  cursor: pointer;
+  color: var(--font-color-2);
+  text-decoration: none !important;
+  padding: 5px;
+  width: 150px;
+  /* border: 5px solid pink; */
+}
+
+/*.Header__navbar-desktop-links:hover*/
+.nav-big-link:hover {
+  color: var(--font-color-2);
+  background-color: var(--accent-4);
+  padding: 5px;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+

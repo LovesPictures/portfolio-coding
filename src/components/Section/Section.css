@@ -65,7 +65,7 @@ Add a Card__Description-container .Card__header - flex to the next line
 .Section__header-parallax {
   position: relative;
   /* background-position: 0px 0px; */
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -114,21 +114,6 @@ Add a Card__Description-container .Card__header - flex to the next line
   }
 
 
-
-/* .section{
-    display: flex;
-    justify-content: center;
-   
-    align-items: center;
-    color: black;
-
-    border: 10px solid blueviolet;
-    /* max-width: 80%; 
-} */
-
-
-
-
 /* sections ----------------------------------------- */
 
 /* footer {
@@ -139,46 +124,51 @@ Add a Card__Description-container .Card__header - flex to the next line
 } */
 
 /* section heights  for development ------------------- */
-section {
+/* section {
   display: flex;
   /* justify-content: center;
   height: 50vh; 
   color: rosybrown;  */
-  /* border: 10px solid green; */
-}
+  /* border: 10px solid green; 
+} */
 
 /* Area for Template - for the section area   -----------------------------------------*/
 
 
-#Home {
+/* #Home {
     /* background-color: #fff; */
-    /* height: 50vh; */
+    /* height: 50vh; 
     
-  }
-  #About {
+  } */
+  /* #About {
     /* background-color: #f9e6d2; */
-    /* height: 50vh; */
-  }
-  #Projects {
+    /* height: 50vh; 
+  } */
+
+
+  /* #Projects {
     /* background-color: #e0e7ca;*/
-    /* height: 50vh;  */
-  }
-  #Skills {
+    /* height: 50vh;  
+  } */
+
+  /* #Skills {
     /* background-color: pink; */
     /* height: 50vh; */
-    /* position: relative; */
-  }
-  #Contact {
+    /* position: relative; 
+  } */
+
+  /* #Contact {
     /* background-color: #d7ecf6; */
-    /* height: 50vh; */
-  }
-  footer {
+    /* height: 50vh; 
+  } */
+
+  /* footer {
     /* display: flex; */
     /* justify-content: center; */
     /* height: 10vh; 
     border: 10px solid rgb(226, 70, 43); */
     /* background: #505152; */
-    /* color: white; */
+    /* color: white; 
 
-  }
+  } */
   

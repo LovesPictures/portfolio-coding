@@ -15,7 +15,7 @@ export const Projects = () => {
       <div className="Section__Container">
         {/* write js {} */}
         {projectData.map((project) => {
-          {/* prop = {value} */}
+          /* prop = value */
           return <Card project={project}/>          
 
         })}

@@ -51,6 +51,27 @@ In this component there are 4 elements
 . navbar for large screen with ``react-scroll`` dependencies 
 2. SmallScreensNavbar.js  to manage side bar list + with react-scroll dependencies 
 4. useWindowWidthAndHeight - custom Hooks which manages the changing window size
+5. Navbar background texture uses ``image-rendering`` an image scaling algorithm which applies to an element itself, images, and to its children. https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering 
+
+```
+header {
+  font: inherit;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  background: var(--background-2);
+  image-rendering: pixelated;  
+  /* Anti-aliasing use even numbers  */
+  background-size: 4px 4px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-shadow: var(--box-shadow-1);
+  z-index: 10;
+}
+```
+
 
 These functions are called in the header.js component and included a repeated background grid texture as appears in the design Museums website :) 
 

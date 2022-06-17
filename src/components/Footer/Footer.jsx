@@ -1,34 +1,29 @@
 import React from 'react'
 import "./Footer.css";
 
+// import icons form icons
+import Icons from "../img/Icons"
+
+
 const Footer = () => {
   return (
     <div id="Footer">
-    <h2 className="Footer__header ">footer</h2>
-      {/* <div className="Section__Container">        */}
-      {/* </div> */}
-
-    </div>
+    <div className="Footer__header ">
+    {/* <div className="Section__Container">  */}
+        <ul className="Footer__ul">
+         {/* access icons from the images */}
+          <img className="Footer__icon"  src={ Icons.iconInstagram} onclick="(https://www.instagram.com/lovespictures__/)" target="_blank" alt="instagram logo" />  
+          <img className="Footer__icon" src={ Icons.iconLinkedin} alt="Javascript logo" />  
+          <img className="Footer__icon" src={ Icons.iconInstagram} alt="React logo" />  
+          <img className="Footer__icon" src={ Icons.iconTwitter} alt="React logo" /> 
+        </ul>
+      </div>
+     </div>
   )
 }
 export default Footer;
 
 
-// import React from "react";
 
-// export function Footer() {
-//   return (
-//     <footer className="github">
-//       <h3>
-//         Jude Ricketts on: 
-//          <a
-//           href="https://github.com/LovesPictures"
-//           target="_blank"
-//           rel="noopener noreferrer nofollow"
-//         >
-//            Github
-//         </a>
-//       </h3>
-//     </footer>
-//   );
-// }
+// warning https://code.visualstudio.com/docs/editor/refactoring 
+

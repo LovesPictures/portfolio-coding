@@ -13,7 +13,7 @@ export const Skills = () => {
       <h2 className="Section__header Section__header-parallax img3">Skills</h2>
       <div className="Section__Container">       
         <ul className="Skills__ul">
-         {/* access icons form the images */}
+         {/* access icons from the images */}
          <img className="Skills__icon" src={ Icons.iconHtml} alt="Html logo" />  
           {/* Languages  */}
           <img className="Skills__icon" src={ Icons.iconJavascript} alt="Javascript logo" />  
