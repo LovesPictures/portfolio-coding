@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Section/Section.css";
 
 import "./Contact.css";
@@ -6,6 +6,20 @@ import "./Contact.css";
 // To do contact form  - https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form
 
 export const Contact = () => {
+
+  //inialise the state with an inital value
+  // variable to read the state - and a function to write the state
+  const [ userName, setUserName ] = useState("");
+  const [ userEmail, setUserEmail] = useState ("");
+  const [ userTextArea, setUserTextarea ] = useState("");
+  
+  const handleFormSubmit= () => {
+      alert(" Thank you for the info: " + userName, )
+  }
+
+
+console.log({userEmail});
+
   return (
     <div id="Contact">
       <h2 className="Section__header Section__header-parallax img4">Contact</h2>
@@ -15,7 +29,7 @@ export const Contact = () => {
         {/* <p> work in progress</p> */}
 
         <div className="Contact__Form-body" name="Contact">
-          <form id="Contact__form">
+          <form onSubmit={handleFormSubmit} id="Contact__form">
             <label id="Contact__form-name" for="name">
               Your Name
             </label>
@@ -23,6 +37,10 @@ export const Contact = () => {
               type="text"
               name="name"
               id="name"
+              // controlled input onChange - circular store the input value in state when user types a letter each letter is saved , then you feed it back to input 
+              value={userName}
+              onChange={(event) => setUserName(event.target.value)}
+              
               class="form-control"
               placeholder="Enter your name"
               required
@@ -36,16 +54,20 @@ export const Contact = () => {
                 type="email"
                 name="email"
                 id="email"
+                value={userEmail}
+                onChange={(event) => setUserEmail(event.target.value)}
                 class="form-control"
                 placeholder="Enter your email"
                 required
               />
             </div>
-
+{/* update with label and associate it */}
             <textarea
               type="textArea"
               id="comments"
-              // class="input-textarea"
+              value={userTextArea}
+              onChange={(event) => setUserTextarea(event.target.value)}
+              class="input-textarea"
               name="comment"
               placeholder="Your comment here..."
               required
@@ -55,7 +77,7 @@ export const Contact = () => {
               type="submit"
               id="Contact__form-submit-Btn"
               class="submit-button"
-            >
+            > 
               Submit
             </button>
           </form>
