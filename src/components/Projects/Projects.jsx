@@ -49,4 +49,8 @@ export const Projects = () => {
 };
 
 //rafce
+/*
+to do 
 
+Warning https://reactjs.org/docs/lists-and-keys.html#keys
+*/

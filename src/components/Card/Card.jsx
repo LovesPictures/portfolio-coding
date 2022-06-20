@@ -59,6 +59,9 @@ export const Card = ({ project }) => {
 };
 
 /*
+to do 
+
+Warning https://reactjs.org/docs/lists-and-keys.html#keys
 a card container 
 a heading
 an image 
