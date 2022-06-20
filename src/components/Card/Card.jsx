@@ -20,26 +20,40 @@ image https://create-react-app.dev/docs/adding-images-fonts-and-files/
 // prop value inside curlie brackets
 export const Card = ({ project }) => {
   return (
-    <div className="Card">
-      <img className="Card__image" src={project.img} alt="#" />
+    <div className="Card__wrapper">
+      <div className="Card">
+        <img className="Card__image" src={project.img} alt="#" />
 
-      <h3 className="Card__header ">{project.title}</h3>
-      {/* container for the icons */}
-      <ul className="Card__ul">
-        <a className="Card__icon" target="_blank" rel="noreferrer" href={project.linkGithub}>
-          <img src={Icons.iconGithub} alt="#" />
-        </a>
-        <a className="Card__icon" target="_blank" rel="noreferrer" href={project.linkNetlify}>
-          <img src={Icons.iconNetlify} width="30" alt="#" />
-          {/* To do - assing a name to the icons */}
-          <p>{project.iconName}</p>
-        </a>
-      </ul>
-      {/* roll over project name for more information */}
-      <article className="Card__description">
-        {/* <strong>Project Description:</strong> {project.description} */}
-        {project.description}
-      </article>
+        <h3 className="Card__header ">{project.title}</h3>
+        {/* container for the icons */}
+        <ul className="Card__ul">
+          <a
+            className="Card__icon"
+            target="_blank"
+            rel="noreferrer"
+            href={project.linkGithub}
+          >
+            <img src={Icons.iconGithub} alt="#" />
+          </a>
+          <a
+            className="Card__icon"
+            target="_blank"
+            rel="noreferrer"
+            href={project.linkNetlify}
+          >
+            <img src={Icons.iconNetlify} width="30" alt="#" />
+            {/* To do - assing a name to the icons */}
+            <p>{project.iconName}</p>
+          </a>
+        </ul>
+        {/* roll over project name for more information */}
+        <div className="Card__description-wrapper">
+          <article className="Card__description">
+            {/* <strong>Project Description:</strong> {project.description} */}
+            {project.description}
+          </article>
+        </div>
+      </div>
     </div>
   );
 };

@@ -7,14 +7,13 @@ import "./Contact.css";
 
 export const Contact = () => {
 
-  //inialise the state with an inital value
-  // variable to read the state - and a function to write the state
+  // variable to read the state - and a function to write the state, with an initial value in the shape of the data e.g.[], or "" etc
   const [ userName, setUserName ] = useState("");
   const [ userEmail, setUserEmail] = useState ("");
   const [ userTextArea, setUserTextarea ] = useState("");
   
   const handleFormSubmit= () => {
-      alert(" Thank you for the info: " + userName, )
+      alert(" Thank you for the info: " + userName + "I will reply to you in an hour")
   }
 
 
@@ -41,7 +40,7 @@ console.log({userEmail});
               value={userName}
               onChange={(event) => setUserName(event.target.value)}
               
-              class="form-control"
+              className="form-control"
               placeholder="Enter your name"
               required
             />
@@ -56,7 +55,7 @@ console.log({userEmail});
                 id="email"
                 value={userEmail}
                 onChange={(event) => setUserEmail(event.target.value)}
-                class="form-control"
+                className="form-control"
                 placeholder="Enter your email"
                 required
               />
@@ -67,7 +66,7 @@ console.log({userEmail});
               id="comments"
               value={userTextArea}
               onChange={(event) => setUserTextarea(event.target.value)}
-              class="input-textarea"
+              className="input-textarea"
               name="comment"
               placeholder="Your comment here..."
               required
@@ -76,7 +75,7 @@ console.log({userEmail});
             <button
               type="submit"
               id="Contact__form-submit-Btn"
-              class="submit-button"
+              className="submit-button"
             > 
               Submit
             </button>

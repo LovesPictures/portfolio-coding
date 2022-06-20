@@ -23,6 +23,7 @@ export const Skills = () => {
           {/* <img className="Skills__icon" src={ Icons.iconNodejs} alt="Node logo" /> */}
           {/* version control */}
           <img className="Skills__icon" src={ Icons.iconGithub} alt="Github logo" />
+          <br/>
           <img className="Skills__icon" src={ Icons.iconNpm} alt="Npm logo" />
           <img className="Skills__icon" src={ Icons.iconTerminal} alt="Terminal logo" />
           {/* deploy */}

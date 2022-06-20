@@ -102,7 +102,7 @@ an image
 project description 
 a href with logo +  alt text using icons doc: https://icons8.com/icons/set/github 
 
-Having decided on what the components of the page are use the ``Thinking in React in 5 steps `` approach: Docs: https://reactjs.org/docs/thinking-in-react.html
+Having decided on what the components of the page are use the `Thinking in React in 5 steps` approach: Docs: https://reactjs.org/docs/thinking-in-react.html
 Step 1: Break The UI Into A Component Hierarchy...
 Step 2: Build A Static Version in React
 Step 3: Identify The Minimal (but complete) Representation Of UI State
@@ -121,7 +121,7 @@ cross hairs rollout
 
 1. img  
 ## Styling
-- App.css with high level styles to passed to each .css file - I may update this with ``Styled Components css`` inside each component https://styled-components.com/docs/basics
+- App.css with high level styles to passed to each .css file - I may update this with `Styled Components css` inside each component https://styled-components.com/docs/basics
 
 https://materialui.co/unicode-characters/ 
 
@@ -132,17 +132,15 @@ Single page website responsive for;
 - Responsive burger menu 
 - Parallax images 
 
-- Font: ``din-pro, sans-serif`` or  ``Roboto Condensed', monospace``
-- Colours: background: `` #f0f0f0 `` accent: yellow:``` #e8e316, opacity 80%```
-- For the images curate a set of three from your collection or do a google search for inclusive images such as ``royalty free black girl programming images `` etc.  
+- Font: `din-pro, sans-serif` or  `Roboto Condensed', monospace`
+- Colours: background: ` #f0f0f0 ` accent: yellow:` #e8e316, opacity 80%`
+- For the images curate a set of three from your collection or do a google search for inclusive images such as `royalty free black girl programming images ` etc.  
 
 ### Inspiration 
 <!-- https://designmuseum.org/ -->
 
 ![This is an image](/src/components/img/designMus.JPG)
 ![This is an image](/src/components/img/designMu-menu.JPG)
-
-
 
 
 <!--  ### keywords
@@ -157,6 +155,7 @@ Test and Lint Storybook Storybook -->
 ### card 
 
 1 write the HTML 
+### cards #1
 ```
 import img1 from "../img/1.jpg";
 import github from "../img/github.svg";
@@ -182,7 +181,7 @@ import netlify from "../img/netlify.csv";
     </div>
     
 ```
-
+### cards #2
 Refactored to card.js to include an image object to handle all the .svg images, this did not work with .jpg or .png.
 
 ```
@@ -218,7 +217,7 @@ export const Card = () => {
   );
 };
 ```
-
+### cards #3
 next refactor of the cards model. 
 Set up an array, with a ordered list object 
 render the icons from icons.jsx component
@@ -236,3 +235,64 @@ export const projectData = [
     netlify: "https://jr-baby-names-picker.netlify.app",
   },
   ```
+  ### cards #4
+
+  move the project data to an external source (usually used for testing, bring in the `projectData` 
+![This is an image](/src/components/img/jsonBin.png)
+
+  ```
+import React, { useEffect, useState } from "react";
+
+import "../Section/Section.css";
+
+export const Projects = () => {
+  const getProjectData = async () => {
+    // error handing try catch
+    try {
+      const data = await fetch(
+        "https://api.jsonbin.io/b/62adb726449a1f38210ea278"
+      );
+      const json = await data.json();
+      console.log(json);
+      return json;
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  //store the data form the API in the shape of the data e.g. [] or ""
+  const [projectData, setProjectData] = useState([]);
+
+  useEffect(() => {
+    console.log("useEffect has been run");
+    const fetchData = async () => {
+      const data = await getProjectData();
+       setProjectData(data)
+    };
+    fetchData();
+  }, []);
+
+  return (
+    <div id="Projects">
+      <h2 className="Section__header Section__header-parallax img2">
+        Projects
+      </h2>
+
+      <div className="Section__Container">
+        {/* write js {} */}
+        {projectData.map((project) => {
+          /* prop = value */
+          return <Card project={project} />;
+        })}
+      </div>
+    </div>
+  );
+};
+```
+
+The `try` catch clause for error handling 
+
+### Contact form 
+### form #1
+![This is an image](/src/components/img/contactForm-1.PNG)
+
+  useState: a variable to read the state - and a function to write the state, with an initial value in the shape of the data e.g.[], or "" etc

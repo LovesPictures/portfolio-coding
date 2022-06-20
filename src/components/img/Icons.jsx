@@ -1,5 +1,5 @@
 
-// create an object containing images 
+// create an object containing icons 
 
 // import img from "./img";
 

@@ -50,4 +50,3 @@ export const Projects = () => {
 
 //rafce
 
-//https://api.jsonbin.io/b/62adb726449a1f38210ea278
