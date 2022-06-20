@@ -41,17 +41,3 @@ export const Skills = () => {
 
 
 
-
-/*
-   iconNetlify: require("./netlify.svg").default,
-   iconJavascript: require("./javascript.svg").default,
-   iconNodejs: require("./nodejs.svg").default,
-   iconReact: require("./react.svg").default,
-   iconTerminal: require("./terminal.png").default,
-   iconVScode: require("./VScode.svg").default,
-   iconHtml: require("./html.svg").default,
-   iconGithub: require("./github.svg").default,
-   iconFirebase: require("./firebase.png").default,
-
-*/
-

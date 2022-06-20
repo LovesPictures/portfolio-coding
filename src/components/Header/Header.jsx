@@ -29,7 +29,7 @@ export const Header = () => {
         <Link to="Home" smooth={true} className="logo nav-link">
           {/* JR */}
           {/* logo */}
-          <img className="Logo__icon" src={Icons.iconLogo} alt="Html logo" /> 
+          <img className="Logo__icon" src={Icons.iconLogo} alt="html logo" /> 
           {/* <i className="fab fa-react"></i>  */}
         </Link>
         {/*if the width of the window is bigger than 1000px use <Navbar/>,

@@ -6,7 +6,7 @@
  const Icons = {
    iconNetlify: require("./netlify.svg").default,
    iconJavascript: require("./javascript.svg").default,
-   iconHtml: require("./Html.svg").default,
+   iconHtml: require("./html.svg").default,
 //    iconNodejs: require("./nodejs.svg").default,
    iconNpm: require("./npm.svg").default,
    iconReact: require("./react.svg").default,
