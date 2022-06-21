@@ -4,7 +4,7 @@ import Airtable from "airtable";
 
 //api key
 //base id 
-const base = new Airtable({ apiKey: "keywcrl4OFgUwp3fF" }).base(
+const base = new Airtable({ apiKey: "" }).base(
   "appVrIqyZZvnKD9As"
 );
 // Table id
