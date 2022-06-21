@@ -19,6 +19,7 @@
   --accent-2: #fb00ff99;
   --accent-3: #adff2f;
   --accent-4: #545455; 
+  --accent-5: #ffff;
 
   /* font */
   --font-family-1: 'Roboto condensed', monospace;
@@ -27,7 +28,8 @@
   --font-size-1: 55px;
   --font-size-2: 34px;
   --font-size-3: 22px;
-  --font-size-4: 16px;  
+  --font-size-4: 16px;
+  --font-size-5: 12px;  
 
   --font-weight-1:800;
   --font-weight-2:600;
@@ -36,15 +38,19 @@
   --font-color-1: #545455;
   --font-color-2: #ffff;
   --font-color-3: #000;
-
+  --font-color-4: #8e8e8f;
+  
 
   /* styling */
   --box-shadow-1: 1px 1px 1px 1px rgba(136, 132, 132, 0.199);
   --box-shadow-2: 0 12px 12px var(var(--accent-3));
+  --box-shadow-3: 0 0 6px #fb00ff99; 
 
 
-  /* main border */
-  --border-color-1: #545455; 
+  /* Border */
+  --border-color-1: #888787;
+  --border-color-2: #fb00ff99; 
+
   --border-style-1: 10px dotted;
   --border-radius-1: 20px; 
 

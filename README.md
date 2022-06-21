@@ -296,3 +296,15 @@ The `try` catch clause for error handling
 ![This is an image](/src/components/img/contactForm-1.PNG)
 
   useState: a variable to read the state - and a function to write the state, with an initial value in the shape of the data e.g.[], or "" etc
+
+## Data handling 
+
+I was interested in setting up my first a light touch database to handle the potential data received form the contact form.  My research shortlisted ``Airtable`` https://www.airtable.com as the best solution. 
+
+I set up a short set of test data to see if I could send and/or receive data for the contact form
+
+![This is an image](/src/components/img/contactForm-data-1.PNG)
+
+validating a telephone number https://www.abstractapi.com/guides/how-to-validate-phone-number-react-js 
+
+
