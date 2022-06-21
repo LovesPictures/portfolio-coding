@@ -8,7 +8,7 @@ import "./Contact.css";
 export const Contact = () => {
   // variable to read the state - and a function to write the state, with an initial value in the shape of the data e.g.[], or "" etc
   const [firstName, setFirstName] = useState("");
-  const [familyName, setFamilyName ] = useState("");
+  const [lastName, setLastName ] = useState("");
   const [userTelephone,setUserTelephone] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [userTextArea, setUserTextarea] = useState("");
@@ -48,22 +48,22 @@ export const Contact = () => {
               required
             />
 
-            <label id="Contact__form-familyName" for="Family Name">
-             Family Name
+            <label id="Contact__form-LastName" for="Last Name">
+             Last Name
             </label>
             <input
               type="text"
-              name="familyName"
-              id="familyName"
+              name="lastName"
+              id="lastName"
               // controlled input onChange - circular store the input value in state when user types a letter each letter is saved , then you feed it back to input
-              value={familyName}
+              value={lastName}
 
 //  To do  first lett to upper case               
-              onChange={(event) => setFamilyName(event.target.value)}
+              onChange={(event) => setLastName(event.target.value)}
               //(event.target.value.charAt(0).toUpperCase())}
               // str.charAt(0).toUpperCase() + str.slice(1);
               className="form-control"
-              placeholder="Family name"
+              placeholder="Last name"
               required
             />
 
