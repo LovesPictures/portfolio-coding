@@ -6,6 +6,7 @@ export default function useData() {
 
    const getData = async () => {
         return axios.get('/').then(res => {
+          console.log('res.data.records:', res.data.records)
             setData(res.data.records);
       });
    }

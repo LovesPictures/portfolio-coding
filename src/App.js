@@ -7,6 +7,7 @@ import {Skills} from "./components/Skills/Skills";
 import {Blog} from "./components/Blog/Blog";
 import {Contact} from "./components/Contact/Contact";
 import {Footer} from "./components/Footer/Footer";
+import Landing from "./components/Contact/Landing";
 // import {base} from "./components/Contact/Base"
 
 
@@ -22,6 +23,7 @@ function App() {
       <Skills />
       <Blog />
       <Contact />
+      <Landing />
       <Footer />
     </div>
   );
