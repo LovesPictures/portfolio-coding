@@ -299,9 +299,9 @@ The `try` catch clause for error handling
 
 ## Data handling 
 
-I was interested in setting up my first a light touch database to handle the potential data received form the contact form.  My research shortlisted ``Airtable`` https://www.airtable.com as the best solution. 
+I was interested in setting up my first a light touch database to handle the potential data received form the contact form.  My research shortlisted ``Airtable`` https://www.airtable.com as the best solution using ``npm i airtable``
 
-I set up a short set of test data to see if I could send and/or receive data for the contact form
+I set up a short set of test data to see if I could send and/or receive data for the contact form. A native single table application."
 
 ![This is an image](/src/components/img/contactForm-data-1.PNG)
 

@@ -6,24 +6,28 @@ import { Card } from "../Card/Card";
 import "../Section/Section.css";
 
 export const Projects = () => {
+
   const getProjectData = async () => {
+    // getting and converting the data 
     // error handing try catch
     try {
       const data = await fetch(
         "https://api.jsonbin.io/b/62adb726449a1f38210ea278"
       );
       const json = await data.json();
-      console.log(json);
+      // console.log(json);
       return json;
     } catch (err) {
-      console.log(err);
+      console.log("Type of Error:", err);
     }
   };
   //store the data form the API in the shape of the data e.g. [] or ""
   const [projectData, setProjectData] = useState([]);
 
   useEffect(() => {
-    console.log("useEffect has been run");
+    //using the date 
+    // console.log("useEffect has been run");
+    //wait for this getProjectData to finish then go on to the next step
     const fetchData = async () => {
       const data = await getProjectData();
        setProjectData(data)

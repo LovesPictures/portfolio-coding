@@ -19,7 +19,7 @@ export const Contact = () => {
     );
   };
 
-  console.log({ userEmail });
+  // console.log({ userEmail });
 
   return (
     <div id="Contact">
