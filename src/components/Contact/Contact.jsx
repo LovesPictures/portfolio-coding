@@ -89,7 +89,7 @@ export const Contact = () => {
                 Telephone
               </label>
               <input
-                type="number"
+                type="tel"
                 name="telephone"
                 id="telephone"
                 value={userTelephone}

@@ -147,6 +147,8 @@ when do we use them ...
 
 /* MEDIA  -------------------------------------------- */
 
+/* ipad landscape 320 */
+
 @media screen and (min-width: 300px) {
   .Card {
     max-width: 100%;
@@ -161,7 +163,8 @@ when do we use them ...
     transition: all 0.35s ease-in-out;
   }
 }
-
+/* ipad landscape 1024 */
+/* ipad portrait 768 */
 @media screen and (min-width: 700px) {
   .Card {
     max-width: 50%;
@@ -175,6 +178,7 @@ when do we use them ...
     height: auto;
   }
 }
+
 
 @media screen and (min-width: 1500px) {
   .Card {
