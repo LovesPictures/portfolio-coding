@@ -9,7 +9,7 @@ export const Projects = () => {
 
   const getProjectData = async () => {
     // getting and converting the data 
-    // error handing try catch
+    // to handle errors handing try catch
     try {
       const data = await fetch(
         "https://api.jsonbin.io/b/62adb726449a1f38210ea278"
@@ -17,15 +17,15 @@ export const Projects = () => {
       const json = await data.json();
       // console.log(json);
       return json;
-    } catch (err) {
-      console.log("Type of Error:", err);
+    } catch (error) {
+      console.log("Type of Error:", error);
     }
   };
   //store the data form the API in the shape of the data e.g. [] or ""
   const [projectData, setProjectData] = useState([]);
 
   useEffect(() => {
-    //using the date 
+    //using the date in the use effect
     // console.log("useEffect has been run");
     //wait for this getProjectData to finish then go on to the next step
     const fetchData = async () => {

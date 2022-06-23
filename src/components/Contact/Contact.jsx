@@ -25,9 +25,9 @@ export const Contact = () => {
     <div id="Contact">
       <h2 className="Section__header Section__header-parallax img4">Contact</h2>
       {/* <div className="Section__Container"> */}
+
+<div className="Contact__Form-container">   
       <div className="Section__Container">
-        {/* temporary container  */}
-        {/* <p> work in progress</p> */}
 
         <div className="Contact__Form-body" name="Contact">
           <form onSubmit={handleFormSubmit} id="Contact__form">
@@ -124,6 +124,7 @@ export const Contact = () => {
           </form>
         </div>
       </div>
+    </div>
     </div>
   );
 };

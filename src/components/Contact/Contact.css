@@ -7,10 +7,18 @@
     margin: 0 auto;
     /* border: 10px solid pink;    
   } */
+.Contact__Form-container {
+  background: var(--background-2);
+   padding: 30px 0px 20px 0px;
+}
 
+.Contact__Form-body {
+  /* padding: 10px 0px 10px 0px; */
+  background-color: var(--background-1);
+}
 
 #Contact__form {
-  width: 100%;
+  width: 90%;
   font-family: var(--font-family-2);
   /* margin: calc(30vh - 220px) auto; */
   padding: 50px 0px;
@@ -18,21 +26,19 @@
   margin: 0 auto;
   box-sizing: border-box;
   position: relative;
-  
 }
 
 #firstName,
 #lastName,
 #telephone,
 #email {
-  width:100%;
+  width: 100%;
   margin: 14px auto;
   font-family: var(--font-family-2);
   font-size: var(--font-size-4);
   color: var(--font-color-4);
   /* border: 10px solid green; */
 }
-
 
 /* #Contact__form-email {
   margin: 0px auto;  
@@ -65,7 +71,6 @@ input:focus:required:invalid {
 input:focus:required:placeholder-shown {
   border: 2px solid var(--border-color-2);
 }
-
 
 #comments {
   width: 100%;
@@ -109,6 +114,4 @@ input:focus:required:placeholder-shown {
 #Contact__form-submit-Btn:hover {
   background-color: var(--accent-2);
   color: var(--font-color-2);
-
 }
-

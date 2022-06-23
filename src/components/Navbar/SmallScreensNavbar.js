@@ -7,7 +7,7 @@ const SmallScreensNavbar = () =>{
     let [translate, setTranslate ] = useState(true);
     return(
         <div> 
-             <button className="hamburger-btn"
+             <button className="Header__navbar-hamburger-btn"
                      onClick= {()=> setTranslate(!translate)}>  {/* toggle translate */}
                   {/* change the btn text based on whether translate is true or false */} 
                  {translate?<span>&#9776;</span>:<span>&times;</span>}
@@ -15,12 +15,12 @@ const SmallScreensNavbar = () =>{
 
              {/*hide and show the sidebar list based on whether translate is true or false*/}
 
-             
+{/* mobile link  -------------------------------- */}
              {/* - How to increase the removeTransition so it is completely off the page  */}
-             <div id="sidebar-list" className={`${translate? "addTransition": "removeTransition"}`}>
+             <div id="Navbar__mobile-container" className={`${translate? "addTransition": "removeTransition"}`}>
                 <NavComponent
-                    navClass="nav-small"
-                    linkClassName = "nav-small-link"
+                    navClass="Mobile__container-links-container"
+                    linkClassName = "Mobile__container-links"
                     onClick = {()=>setTranslate(true)}  //set translate to true to hide the sidebar list
                 />
              </div>

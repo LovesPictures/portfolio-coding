@@ -13,13 +13,14 @@
   --background-2: url(./components/img/grid.png) #e8e316cc;
   --background-3: #e8e316cc;
   --background-4: #fb00ff99;
-
+  --background-5: url(./components/img/grid.png),linear-gradient(to bottom,#c4c4c4 0,#fff 100%);
 
   --accent-1: #e8e316cc;
   --accent-2: #fb00ff99;
   --accent-3: #adff2f;
   --accent-4: #545455; 
   --accent-5: #ffff;
+  --accent-6: #9c9c9c; 
 
   /* font */
   --font-family-1: 'Roboto condensed', monospace;
@@ -42,7 +43,7 @@
   
 
   /* styling */
-  --box-shadow-1: 1px 1px 1px 1px rgba(136, 132, 132, 0.199);
+  --box-shadow-1: 1px 1px 1px 1px #88848433;
   --box-shadow-2: 0 12px 12px var(var(--accent-3));
   --box-shadow-3: 0 0 6px #fb00ff99; 
 
