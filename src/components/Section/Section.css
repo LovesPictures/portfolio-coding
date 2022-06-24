@@ -2,183 +2,86 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 
 
-
-.Section__Container{
-  position:relative;
-  display: block;
-  /* height: 400px; */
-  /* margin: 100px; */
-  /* width: 75%; */
-  /* margin: 0 auto; */
-  /* border: 10px solid pink;    */
-  
+.Section__Container {
+    position: relative;
+    display: block;
 }
 
 .Section__header {
-  font-family: var(--font-family-1);
-  font-size: var(--font-size-1);
-  color: var(--font-color-3);
-  /* same as Section__container; */
-  /* width: 75%; */
-  /* margin: 0 auto; */
-  text-align: center;
-  /* border: 10px solid blueviolet; */
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-1);
+    color: var(--font-color-3);
+    text-align: center;
 }
 
 /* To do - 
-Grow the Section__Container 90% wide from mobile to desktop 40% wide.
-Grow the Card from mobile 100% to desktop 55% to a particular size.
-Add a Card__Description-container .Card__header - flex to the next line 
 
 */
-.Section__Container, .Section__header {
-  width: 80%;
-  margin: 0 auto;
-  /* height: 400px; */
+.Section__Container,
+.Section__header {
+    width: 80%;
+    margin: 0 auto;
 }
 
 
 .Section__line {
-  height: 2px;
-  width: 100px;
-  background-color: var(--accent-1);
-  /* background-color: darkgrey; */
-  margin: 0 auto;
-  
+    height: 2px;
+    width: 100px;
+    background-color: var(--accent-1);
+    margin: 0 auto;
 }
 
 .p__description {
-  margin: 50px 0px ;
-  text-align: justify;
-  font-family: var(--font-family-2);
-  color: var(--font-color-1);
-  font-size: var(--font-size-4);
-  line-height: 1.6;
-    /* border: 10px solid blueviolet; */
+    margin: 50px 0px;
+    text-align: justify;
+    font-family: var(--font-family-2);
+    color: var(--font-color-1);
+    font-size: var(--font-size-4);
+    line-height: 1.6;
 }
 
-
-/* Parallax background image -------------------------------- */
-/* .Section__header-parallax-profileImg {
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  display: flex;
-  align-items: center;
-  justify-content:center;
-  /* border: 10px solid pink; 
-  color:white;
-  height: 700px;  
-} */
-
 .Section__header-parallax {
-  position: relative;
-  /* background-position: 0px 0px; */
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  
-  display: flex;
-  align-items: center;
-  justify-content:center;
-  /* border: 10px solid pink; */
-  color:white;
-  height: 600px;
-  
+    position: relative;
+    /* background-position: 0px 0px; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 600px;
 }
 
 
 .img1 {
-  background-image: url('https://lovespictures.com/1.jpg');
-  height: 600px;
+    background-image: url('https://lovespictures.com/1.jpg');
+    height: 600px;
 }
 
 .img2 {
-  background-image: url('https://lovespictures.com/pe/3.jpg');
-  /* https://images.pexels.com/photos/2506209/pexels-photo-2506209.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 */
+    background-image: url('https://lovespictures.com/pe/3.jpg');
+    /* https://images.pexels.com/photos/2506209/pexels-photo-2506209.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 */
 }
 
 .img3 {
-  background-image: url('https://lovespictures.com/pe/5.jpg');
-  /* https://images.pexels.com/photos/772520/pexels-photo-772520.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500   height: 80%; */
+    background-image: url('https://lovespictures.com/pe/5.jpg');
+    /* https://images.pexels.com/photos/772520/pexels-photo-772520.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500   height: 80%; */
 }
 
 .img4 {
-  background-image: url('https://lovespictures.com/pe/2.jpg');
-  /* height: 60%; */
+    background-image: url('https://lovespictures.com/pe/2.jpg');
+    /* height: 60%; */
 }
 
 .img5 {
-  background-image: url('https://lovespictures.com/4.jpg');
-} 
-
+    background-image: url('https://lovespictures.com/4.jpg');
+}
 
 .line {
     height: 2px;
     width: 100px;
     background-color: var(--accent-1);
-    /* background-color: darkgrey; */
     margin: 0 auto;
-  }
-
-
-/* sections ----------------------------------------- */
-
-/* footer {
-  height: 10vh;  /* spec this in the footer component 
-  border: 10px solid green;
- 
-  /* font-size: 3rem; 
-} */
-
-/* section heights  for development ------------------- */
-/* section {
-  display: flex;
-  /* justify-content: center;
-  height: 50vh; 
-  color: rosybrown;  */
-  /* border: 10px solid green; 
-} */
-
-/* Area for Template - for the section area   -----------------------------------------*/
-
-
-/* #Home {
-    /* background-color: #fff; */
-    /* height: 50vh; 
-    
-  } */
-  /* #About {
-    /* background-color: #f9e6d2; */
-    /* height: 50vh; 
-  } */
-
-
-  /* #Projects {
-    /* background-color: #e0e7ca;*/
-    /* height: 50vh;  
-  } */
-
-  /* #Skills {
-    /* background-color: pink; */
-    /* height: 50vh; */
-    /* position: relative; 
-  } */
-
-  /* #Contact {
-    /* background-color: #d7ecf6; */
-    /* height: 50vh; 
-  } */
-
-  /* footer {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* height: 10vh; 
-    border: 10px solid rgb(226, 70, 43); */
-    /* background: #505152; */
-    /* color: white; 
-
-  } */
-  
+}
