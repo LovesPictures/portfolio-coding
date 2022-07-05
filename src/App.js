@@ -7,11 +7,6 @@ import {Skills} from "./components/Skills/Skills";
 import {Blog} from "./components/Blog/Blog";
 import {Contact} from "./components/Contact/Contact";
 import {Footer} from "./components/Footer/Footer";
-import Landing from "./components/Contact/Landing";
-// import {base} from "./components/Contact/Base"
-
-
-// import { Header, Home, About, Projects, Skills, Contact, Footer} from "./components";
 
 function App() {
   return (
@@ -23,11 +18,9 @@ function App() {
       <Skills />
       <Blog />
       <Contact />
-      <Landing />
       <Footer />
     </div>
   );
 }
 
 export default App;
-

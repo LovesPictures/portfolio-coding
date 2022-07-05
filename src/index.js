@@ -5,12 +5,14 @@ import App from './App';
 import axios from "axios";
 
 // add in your base_id and api_key
-const BASE_ID = '';
-const API_KEY = ''
+const BASE_ID = 'appVrIqyZZvnKD9As';
+const API_KEY = 'keywcrl4OFgUwp3fF'
 
-// change /contacts/ to your table name
-axios.defaults.baseURL = `https://api.airtable.com/v0/${BASE_ID}/contacts/`;
+//endpoint
+axios.defaults.baseURL = `https://api.airtable.com/v0/${BASE_ID}/Contact__form/`;
+// content sent as a json string
 axios.defaults.headers.post['Content-Type'] = 'application/json';
+//authorisation
 axios.defaults.headers['Authorization'] = `Bearer ${API_KEY}`;
 
 
@@ -20,4 +22,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-

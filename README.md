@@ -1,6 +1,16 @@
 # Getting Started with the portfolio site 
 
 ## Evaluation 
+Conceived, designed, and coded from scratch, this project was very much both an exercise in research, problem solving nad implementation as well as trusting the research I had curated, especially in relation to Airtable, which is a light touch backend database.  Coding a project without an initial codebase was a very different proposition to projects to date.  In the initial stages of the project I considered what I wanted to learn, and incorporated aspects, such as;
+
+- Image handing 
+- Data handling 
+- component management through systems thinking
+- improving my tech related research skills 
+- defining scope in each component
+
+Realising a conceptualised idea in the process of pushing the boundaries of my current knowledge is a very satisfying overall process, I am pleased with what I achieved here.  
+
 
 ## Process
 
@@ -296,14 +306,48 @@ The `try` catch clause for error handling
 ![This is an image](/src/components/img/contactForm-1.PNG)
 
   useState: a variable to read the state - and a function to write the state, with an initial value in the shape of the data e.g.[], or "" etc
-
+### form #2
+![This is an image](/src/components/img/formSubmission.png)
+updated to incorporate web accessibility  https://www.w3.org/WAI/tutorials/forms/ 
 ## Data handling 
 
+### backend database #1
 I was interested in setting up my first a light touch database to handle the potential data received form the contact form.  My research shortlisted ``Airtable`` https://www.airtable.com as the best solution using ``npm i airtable``
 
 I set up a short set of test data to see if I could send and/or receive data for the contact form. A native single table application."
 
 ![This is an image](/src/components/img/contactForm-data-1.PNG)
+
+### backend database 2
+Frontend form connected to the backend with Axios as helper function 
+
+```
+import axios from "axios";
+
+const createNewContactEntry = (
+  firstName,
+  lastName,
+  userTelephone,
+  userEmail,
+  userTextArea
+) => {
+  axios.post("/", {
+    records: [
+      {
+        fields: {
+          FirstName: firstName,
+          LastName: lastName,
+          Email: userEmail,
+          Phone: userTelephone,
+          Message: userTextArea,
+        },
+      },
+    ],
+  });
+};
+```
+
+![This is an image](/src/components/img/formSubmission-backend.png)
 
 validating a telephone number https://www.abstractapi.com/guides/how-to-validate-phone-number-react-js 
 

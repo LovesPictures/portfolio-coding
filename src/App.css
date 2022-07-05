@@ -53,13 +53,9 @@
 
   --border-style-1: 10px dotted;
   --border-radius-1: 20px; 
-
-  /* to do - set to 10px */
   --border-radius-2: 3px;
 
-  /* linier gradient */
-  /* --gradient-color-1: radial-gradient(circle, #fecacc 10%, #afd4ec 80%); 
-  --gradient-color-2: radial-gradient(circle, #afd4ec 10%, #fecacc 80%); */
+ 
 
 }
 html{
@@ -79,58 +75,11 @@ html{
 }
 
 body {
-  /* padding: 0rem 1rem 0rem 1rem ; */
   font: var(--font-family-2);
 
   text-align: center;
-  /* display: flex; */
   display: inline-flex;
   flex-direction: column;
-  /* border */
-  /* margin: 30px 10% 10px 10%;   */
-  /* border: var(--border-style-1); */
   border-radius: var(--border-radius-1);
-  /* border-color: var(--border-color-1); */
-
-  /* at the top end of the h tag range  */
-
 }
 
-
-/* h1{
-
-  font-size: 34px;
-}
-
-h2{
-  font-size: 40px;
-}
-h3{
-  font-size: 24px;
-  font-weight: 700;
-}
-
-h4{
-  font-size: 22px;
-} */
-
-/* 
-p {
-  font-size: 14px;
-  font-family: var(--font-family-2);
-  color: var(--font-color-1);
-   
-  font-weight: 500;
-  line-height: 1.6;
-  margin: 12px;
-  text-justify: auto;
-} */
-
-/* p1 {
-  font-size: 14px;
-}
-
-p2 {
-  font-size: 11px;
-}
- */

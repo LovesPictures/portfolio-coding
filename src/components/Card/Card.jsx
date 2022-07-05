@@ -17,7 +17,7 @@ use the same names across the codebase
 make small changes  - check live server
 image https://create-react-app.dev/docs/adding-images-fonts-and-files/
 */
-// prop value inside curlie brackets
+// prop value inside curly brackets
 export const Card = ({ project }) => {
   return (
     <div className="Card__wrapper">

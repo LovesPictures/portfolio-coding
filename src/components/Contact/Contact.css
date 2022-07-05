@@ -1,24 +1,18 @@
-/* temporary section  */
-/* .Section__Contact-Container {
-    position:relative;
-    display: block;
-    height: 400px;
-    width: 50%;
-    margin: 0 auto;
-    /* border: 10px solid pink;    
-  } */
-
 
 #Contact__form {
   width: 100%;
   font-family: var(--font-family-2);
-  /* margin: calc(30vh - 220px) auto; */
   padding: 50px 0px;
-  /* max-width: calc(100vw - 40px); */
   margin: 0 auto;
   box-sizing: border-box;
-  position: relative;
-  
+  position: relative;  
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
 }
 
 #firstName,
@@ -30,15 +24,7 @@
   font-family: var(--font-family-2);
   font-size: var(--font-size-4);
   color: var(--font-color-4);
-  /* border: 10px solid green; */
 }
-
-
-/* #Contact__form-email {
-  margin: 0px auto;  
-  font-family: var(--font-family-2);
-  /* border: 10px solid green; 
-  } */
 
 #Contact__form-name {
   font-family: var(--font-family-2);
@@ -83,10 +69,6 @@ input:focus:required:placeholder-shown {
   transition: all 0.3s;
   border: 2px solid var(--border-color-1);
 }
-
-/* #comments:hover:required {
-  border: 2px solid var(--border-color-2)
-} */
 
 #comment:focus:required:invalid {
   border: 2px solid var(--border-color-2);
