@@ -5,36 +5,20 @@
 
 .Section__Container{
   position:relative;
-  display: block;
-  /* height: 400px; */
-  /* margin: 100px; */
-  /* width: 75%; */
-  /* margin: 0 auto; */
-  /* border: 10px solid pink;    */
-  
+  display: block; 
 }
 
 .Section__header {
   font-family: var(--font-family-1);
   font-size: var(--font-size-1);
   color: var(--font-color-3);
-  /* same as Section__container; */
-  /* width: 75%; */
-  /* margin: 0 auto; */
   text-align: center;
-  /* border: 10px solid blueviolet; */
 }
 
-/* To do - 
-Grow the Section__Container 90% wide from mobile to desktop 40% wide.
-Grow the Card from mobile 100% to desktop 55% to a particular size.
-Add a Card__Description-container .Card__header - flex to the next line 
 
-*/
 .Section__Container, .Section__header {
   width: 80%;
   margin: 0 auto;
-  /* height: 400px; */
 }
 
 
@@ -42,7 +26,6 @@ Add a Card__Description-container .Card__header - flex to the next line
   height: 2px;
   width: 100px;
   background-color: var(--accent-1);
-  /* background-color: darkgrey; */
   margin: 0 auto;
   
 }
@@ -74,7 +57,6 @@ Add a Card__Description-container .Card__header - flex to the next line
 
 .Section__header-parallax {
   position: relative;
-  /* background-position: 0px 0px; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -83,36 +65,30 @@ Add a Card__Description-container .Card__header - flex to the next line
   display: flex;
   align-items: center;
   justify-content:center;
-  /* border: 10px solid pink; */
   color:white;
-  height: 600px;
-  
+  height: 600px;  
 }
 
-
 .img1 {
-  background-image: url('https://lovespictures.com/1.jpg');
-  height: 600px;
+  background-image: url('../img/1.jpg');
 }
 
 .img2 {
-  background-image: url('https://lovespictures.com/pe/3.jpg');
-  /* https://images.pexels.com/photos/2506209/pexels-photo-2506209.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 */
+  background-image: url('../img/2.jpg'); 
 }
 
 .img3 {
-  background-image: url('https://lovespictures.com/pe/5.jpg');
-  /* https://images.pexels.com/photos/772520/pexels-photo-772520.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500   height: 80%; */
+  background-image: url('../img/3.jpg'); 
 }
 
 .img4 {
-  background-image: url('https://lovespictures.com/pe/2.jpg');
-  /* height: 60%; */
-}
+  background-image: url('../img/6.jpg');
 
+}
 .img5 {
-  background-image: url('https://lovespictures.com/4.jpg');
+  background-image: url('../img/5.jpg');
 } 
+ 
 
 
 .line {
@@ -124,61 +100,76 @@ Add a Card__Description-container .Card__header - flex to the next line
   }
 
 
-/* sections ----------------------------------------- */
+/* Template the site  ----------------------------------------- */
 
-/* footer {
-  height: 10vh;  /* spec this in the footer component 
-  border: 10px solid green;
- 
-  /* font-size: 3rem; 
-} */
+/*
+#Header {
+  background-color: #fff;
+  border: 5px solid blue;
+  height: 10vh;
+}
 
-/* section heights  for development ------------------- */
-/* section {
-  display: flex;
-  /* justify-content: center;
-  height: 50vh; 
-  color: rosybrown;  */
-  /* border: 10px solid green; 
-} */
+#Banner {
+  background-color: #fff;
+    height: 50vh;
+  border: 5px solid blue;
 
-/* Area for Template - for the section area   -----------------------------------------*/
+}
 
+#CategoryCards {
+  background-color: #fff;
+  border: 5px solid blue;
+  height: 50vh;
+}
 
-/* #Home {
-    /* background-color: #fff; */
-    /* height: 50vh; 
-    
-  } */
-  /* #About {
-    /* background-color: #f9e6d2; */
-    /* height: 50vh; 
-  } */
+#ProductFilter {
+  background-color: #fff;
+  border: 5px solid #ff00f2;
+  height: 10vh;
+}
 
+#ProductCards {
+  background-color: #e0e7ca;
+  border: 5px solid blue;
+  height: 100vh;
+}
 
-  /* #Projects {
-    /* background-color: #e0e7ca;*/
-    /* height: 50vh;  
-  } */
+#ProductPromo {
+  background-color: #fff;
+  border: 5px solid #ff00f2;
+  height: 50vh;
+}
 
-  /* #Skills {
-    /* background-color: pink; */
-    /* height: 50vh; */
-    /* position: relative; 
-  } */
+#Collections {
+  background-color: pink;
+  border: 5px solid #ff00f2;
+  height: 50vh;
+}
 
-  /* #Contact {
-    /* background-color: #d7ecf6; */
-    /* height: 50vh; 
-  } */
+#Newsletter {
+  background-color: #f9e6d2;
+  height: 50vh;
+}
 
-  /* footer {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* height: 10vh; 
-    border: 10px solid rgb(226, 70, 43); */
-    /* background: #505152; */
-    /* color: white; 
+#Contact {
+  background-color: #d7ecf6;
+  height: 50vh;
+}
 
-  } */
-  
+#HeadedList {
+  background-color: #f9e6d2;
+  height: 50vh;
+}
+
+#Payment {
+  background-color: pink;
+  height: 50vh;
+  position: relative;
+}
+
+#Footer {
+  background-color: #d7ecf6;
+  border: 5px solid black;
+  height: 20vh;
+}
+*/

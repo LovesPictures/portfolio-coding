@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../img/1.jpg"
 // import img1 from "../img/1.jpg";
 // import github from "../img/github.svg";
 // import netlify from "../img/netlify.csv";

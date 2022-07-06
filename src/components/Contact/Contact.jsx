@@ -36,7 +36,7 @@ export const Contact = () => {
 
   return (
     <div id="Contact">
-      <h2 className="Section__header Section__header-parallax img4">Contact</h2>
+      <h2 className="Section__header Section__header-parallax img5">Contact</h2>
       <div className="Section__Container">
         <div className="Contact__Form-body" name="Contact">
           <fieldset>
