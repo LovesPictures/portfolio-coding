@@ -4,7 +4,7 @@ import {Home} from "./components/Home/Home";
 import {About } from "./components/About/About";
 import {Projects } from "./components/Projects/Projects";
 import {Skills} from "./components/Skills/Skills";
-import {Blog} from "./components/Blog/Blog";
+import {Newsletter} from "./components/Newsletter/Newsletter";
 import {Contact} from "./components/Contact/Contact";
 import {Footer} from "./components/Footer/Footer";
 
@@ -16,7 +16,7 @@ function App() {
       <About />
       <Projects  />
       <Skills />
-      <Blog />
+      <Newsletter />
       <Contact />
       <Footer />
     </div>

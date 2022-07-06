@@ -32,7 +32,7 @@ fieldset {
 
 /* general styling across the inputs */
 input {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   box-sizing: border-box;
   background: none;
