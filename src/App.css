@@ -49,15 +49,16 @@
 
   /* Border */
   --border-color-1: #888787;
-  --border-color-2: #fb00ff99; 
+  /* --border-color-2: #fecacc; */
 
-  --border-style-1: 10px dotted;
+  --border-style-1: 4px dotted #fecacc;
   --border-radius-1: 20px; 
   --border-radius-2: 3px;
 
- 
 
+  
 }
+
 html{
   overflow-x:hidden;
 }
