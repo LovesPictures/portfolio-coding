@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 
+
 .Section__Container{
   position:relative;
   display: block; 
@@ -13,16 +14,19 @@
   text-align: center;
 }
 
+
 .Section__Container, .Section__header {
   width: 80%;
   margin: 0 auto;
 }
 
+
 .Section__line {
   height: 2px;
   width: 100px;
   background-color: var(--accent-1);
-  margin: 0 auto;  
+  margin: 0 auto;
+  
 }
 
 .p__description {
@@ -83,7 +87,7 @@
 .img5 {
   background-image: url('../img/5.jpg');
 } 
-
+ 
 .line {
     height: 2px;
     width: 100px;
