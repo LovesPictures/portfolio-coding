@@ -21,6 +21,9 @@
    iconLinkedin: require("./linkedin.svg").default,
    iconTwitter: require("./twitter.svg").default,
    iconVimeo: require("./vimeo.svg").default,
-  //  icongithubPages: require("./githubPages.svg").default,
+
+   //footer 
+   iconHeart: require("./heart.svg").default,
+   iconGithubPages: require("./githubPages.svg").default,
 }
 export default Icons
