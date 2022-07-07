@@ -248,7 +248,7 @@ export const projectData = [
   ### cards #4
 
   move the project data to an external source (usually used for testing, bring in the `projectData` 
-![This is an image](/src/components/img/jsonBin.png)
+![This is an image jsonBin](/src/components/img/jsonBin.PNG)
 
   ```
 import React, { useEffect, useState } from "react";
